@@ -1,0 +1,10 @@
+Input file: ../../dataset/mnist/test_data/7_img.bmp
+Output file: img_7.hex
+Expected input image shape: 28 x 28. Original input will be resized if not as expected.
+Input image (28 x 28) will be padded by (4 x 4) pixels
+Input image shape after processing: (28, 28, 1)
+Using symetric padding...
+Converted to image shape: (32, 32)
+Formatted data to use to run DW2 :  img_7.hex
+Pixel data in 2D decimal format: img_7qmn_2d.dec
+Pixel data in 2D hex format: img_7qmn_2d.hex

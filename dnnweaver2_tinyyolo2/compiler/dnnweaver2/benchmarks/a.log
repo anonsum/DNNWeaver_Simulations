@@ -1,0 +1,657 @@
+leakyReLU
+leakyReLU
+leakyReLU
+leakyReLU
+leakyReLU
+leakyReLU
+leakyReLU
+leakyReLU
+linear
+**************************************************
+List of ops (nodes) in the graph
+	Op name: conv0/Convolution
+	Op name: conv0/TypeCastOp
+	Op name: conv0/batch_norm/BatchNorm
+	Op name: conv0/batch_norm/TypeCastOp
+	Op name: conv0/leakyReLU/LeakyReLU
+	Op name: pool0/MaxPooling
+	Op name: conv1/Convolution
+	Op name: conv1/TypeCastOp
+	Op name: conv1/batch_norm/BatchNorm
+	Op name: conv1/batch_norm/TypeCastOp
+	Op name: conv1/leakyReLU/LeakyReLU
+	Op name: pool1/MaxPooling
+	Op name: conv2/Convolution
+	Op name: conv2/TypeCastOp
+	Op name: conv2/batch_norm/BatchNorm
+	Op name: conv2/batch_norm/TypeCastOp
+	Op name: conv2/leakyReLU/LeakyReLU
+	Op name: pool2/MaxPooling
+	Op name: conv3/Convolution
+	Op name: conv3/TypeCastOp
+	Op name: conv3/batch_norm/BatchNorm
+	Op name: conv3/batch_norm/TypeCastOp
+	Op name: conv3/leakyReLU/LeakyReLU
+	Op name: pool3/MaxPooling
+	Op name: conv4/Convolution
+	Op name: conv4/TypeCastOp
+	Op name: conv4/batch_norm/BatchNorm
+	Op name: conv4/batch_norm/TypeCastOp
+	Op name: conv4/leakyReLU/LeakyReLU
+	Op name: pool4/MaxPooling
+	Op name: conv5/Convolution
+	Op name: conv5/TypeCastOp
+	Op name: conv5/batch_norm/BatchNorm
+	Op name: conv5/batch_norm/TypeCastOp
+	Op name: conv5/leakyReLU/LeakyReLU
+	Op name: pool5/MaxPooling
+	Op name: conv6/Convolution
+	Op name: conv6/TypeCastOp
+	Op name: conv6/batch_norm/BatchNorm
+	Op name: conv6/batch_norm/TypeCastOp
+	Op name: conv6/leakyReLU/LeakyReLU
+	Op name: conv7/Convolution
+	Op name: conv7/TypeCastOp
+	Op name: conv7/batch_norm/BatchNorm
+	Op name: conv7/batch_norm/TypeCastOp
+	Op name: conv7/leakyReLU/LeakyReLU
+	Op name: conv8/Convolution
+	Op name: conv8/TypeCastOp
+**************************************************
+**************************************************
+List of tensors (edges) in the graph
+	inputs/data[1,416,416,3] (FXP16 (8,8))
+	conv0/weights[16,3,3,3] (FXP16 (2,14))
+	conv0/biases[16] (FXP32 (10,22))
+	conv0/Convolution[1,416,416,16] (FXP64 (42,22))
+	conv0/TypeCastOp[1,416,416,16] (FXP16 (4,12))
+	conv0/batch_norm/mean[16] (FXP16 (4,12))
+	conv0/batch_norm/scale[16] (FXP16 (7,9))
+	conv0/batch_norm/BatchNorm[1,416,416,16] (FXP32 (11,21))
+	conv0/batch_norm/TypeCastOp[1,416,416,16] (FXP16 (8,8))
+	conv0/leakyReLU/alpha[1] (FP32)
+	conv0/leakyReLU/LeakyReLU[1,416,416,16] (FXP16 (8,8))
+	pool0/MaxPooling[1,208,208,16] (FXP16 (8,8))
+	conv1/weights[32,3,3,16] (FXP16 (2,14))
+	conv1/biases[32] (FXP32 (10,22))
+	conv1/Convolution[1,208,208,32] (FXP64 (42,22))
+	conv1/TypeCastOp[1,208,208,32] (FXP16 (8,8))
+	conv1/batch_norm/mean[32] (FXP16 (8,8))
+	conv1/batch_norm/scale[32] (FXP16 (2,14))
+	conv1/batch_norm/BatchNorm[1,208,208,32] (FXP32 (10,22))
+	conv1/batch_norm/TypeCastOp[1,208,208,32] (FXP16 (8,8))
+	conv1/leakyReLU/alpha[1] (FP32)
+	conv1/leakyReLU/LeakyReLU[1,208,208,32] (FXP16 (8,8))
+	pool1/MaxPooling[1,104,104,32] (FXP16 (8,8))
+	conv2/weights[64,3,3,32] (FXP16 (2,14))
+	conv2/biases[64] (FXP32 (10,22))
+	conv2/Convolution[1,104,104,64] (FXP64 (42,22))
+	conv2/TypeCastOp[1,104,104,64] (FXP16 (6,10))
+	conv2/batch_norm/mean[64] (FXP16 (6,10))
+	conv2/batch_norm/scale[64] (FXP16 (3,13))
+	conv2/batch_norm/BatchNorm[1,104,104,64] (FXP32 (9,23))
+	conv2/batch_norm/TypeCastOp[1,104,104,64] (FXP16 (7,9))
+	conv2/leakyReLU/alpha[1] (FP32)
+	conv2/leakyReLU/LeakyReLU[1,104,104,64] (FXP16 (7,9))
+	pool2/MaxPooling[1,52,52,64] (FXP16 (7,9))
+	conv3/weights[128,3,3,64] (FXP16 (2,14))
+	conv3/biases[128] (FXP32 (9,23))
+	conv3/Convolution[1,52,52,128] (FXP64 (41,23))
+	conv3/TypeCastOp[1,52,52,128] (FXP16 (6,10))
+	conv3/batch_norm/mean[128] (FXP16 (6,10))
+	conv3/batch_norm/scale[128] (FXP16 (3,13))
+	conv3/batch_norm/BatchNorm[1,52,52,128] (FXP32 (9,23))
+	conv3/batch_norm/TypeCastOp[1,52,52,128] (FXP16 (6,10))
+	conv3/leakyReLU/alpha[1] (FP32)
+	conv3/leakyReLU/LeakyReLU[1,52,52,128] (FXP16 (6,10))
+	pool3/MaxPooling[1,26,26,128] (FXP16 (6,10))
+	conv4/weights[256,3,3,128] (FXP16 (2,14))
+	conv4/biases[256] (FXP32 (8,24))
+	conv4/Convolution[1,26,26,256] (FXP64 (40,24))
+	conv4/TypeCastOp[1,26,26,256] (FXP16 (5,11))
+	conv4/batch_norm/mean[256] (FXP16 (5,11))
+	conv4/batch_norm/scale[256] (FXP16 (3,13))
+	conv4/batch_norm/BatchNorm[1,26,26,256] (FXP32 (8,24))
+	conv4/batch_norm/TypeCastOp[1,26,26,256] (FXP16 (6,10))
+	conv4/leakyReLU/alpha[1] (FP32)
+	conv4/leakyReLU/LeakyReLU[1,26,26,256] (FXP16 (6,10))
+	pool4/MaxPooling[1,13,13,256] (FXP16 (6,10))
+	conv5/weights[512,3,3,256] (FXP16 (2,14))
+	conv5/biases[512] (FXP32 (8,24))
+	conv5/Convolution[1,13,13,512] (FXP64 (40,24))
+	conv5/TypeCastOp[1,13,13,512] (FXP16 (4,12))
+	conv5/batch_norm/mean[512] (FXP16 (4,12))
+	conv5/batch_norm/scale[512] (FXP16 (3,13))
+	conv5/batch_norm/BatchNorm[1,13,13,512] (FXP32 (7,25))
+	conv5/batch_norm/TypeCastOp[1,13,13,512] (FXP16 (5,11))
+	conv5/leakyReLU/alpha[1] (FP32)
+	conv5/leakyReLU/LeakyReLU[1,13,13,512] (FXP16 (5,11))
+	pool5/MaxPooling[1,13,13,512] (FXP16 (5,11))
+	conv6/weights[1024,3,3,512] (FXP16 (2,14))
+	conv6/biases[1024] (FXP32 (7,25))
+	conv6/Convolution[1,13,13,1024] (FXP64 (39,25))
+	conv6/TypeCastOp[1,13,13,1024] (FXP16 (4,12))
+	conv6/batch_norm/mean[1024] (FXP16 (4,12))
+	conv6/batch_norm/scale[1024] (FXP16 (5,11))
+	conv6/batch_norm/BatchNorm[1,13,13,1024] (FXP32 (9,23))
+	conv6/batch_norm/TypeCastOp[1,13,13,1024] (FXP16 (7,9))
+	conv6/leakyReLU/alpha[1] (FP32)
+	conv6/leakyReLU/LeakyReLU[1,13,13,1024] (FXP16 (7,9))
+	conv7/weights[1024,3,3,1024] (FXP16 (2,14))
+	conv7/biases[1024] (FXP32 (9,23))
+	conv7/Convolution[1,13,13,1024] (FXP64 (41,23))
+	conv7/TypeCastOp[1,13,13,1024] (FXP16 (5,11))
+	conv7/batch_norm/mean[1024] (FXP16 (5,11))
+	conv7/batch_norm/scale[1024] (FXP16 (2,14))
+	conv7/batch_norm/BatchNorm[1,13,13,1024] (FXP32 (7,25))
+	conv7/batch_norm/TypeCastOp[1,13,13,1024] (FXP16 (4,12))
+	conv7/leakyReLU/alpha[1] (FP32)
+	conv7/leakyReLU/LeakyReLU[1,13,13,1024] (FXP16 (4,12))
+	conv8/weights[125,1,1,1024] (FXP16 (2,14))
+	conv8/biases[125] (FXP32 (6,26))
+	conv8/Convolution[1,13,13,125] (FXP64 (38,26))
+	conv8/TypeCastOp[1,13,13,125] (FXP16 (5,11))
+**************************************************
+Accelerator object
+	Precision: 16
+	Systolic array size: 4 -rows x 4 -columns
+	IBUF size:    8,192.0 Bytes
+	WBUF size:    8,192.0 Bytes
+	OBUF size:   32,768.0 Bytes
+	BBUF size:   16,384.0 Bytes
+Double buffering enabled. Sizes of SRAM are halved
+MS :GraphCOmpile Done!!
+INFO:Graph Compiler:MS : In Layer :conv0/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x0 	 Weights : 0x556000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x558000 	 Outputs : 0x559000
+MS: b: 1, ic: 1, oc: 2, oh: 16, ow: 16, kh: 3,kw:3
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:576.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:128.0
+MS: Store Instrn. Stride:2048.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:53504.0
+MS: Store Instrn. Stride:851968.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407c7ac8>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f7f407c7f60>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407d20b8>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f7f407d2208>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f7f407d2278>
+MS. In pu_compile. Alloc size: pool0/MaxPooling[1,208,208,16] (FXP16 (8,8))
+MS. Before t_out_addr: 0xc37c000, len:4,pad_offset:3376.0
+MS. FInal t_out_addr: 0xc37da60, pad_offset:6752
+OBUF.pop                  ->   R0
+R0         >>  #(10)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(13)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(10)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(10)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(10)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv1/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0xc37c000 	 Weights : 0xc8df000
+INFO:Graph Compiler:MS : Addr -- Bias : 0xc8e8000 	 Outputs : 0xc8e9000
+MS: b: 1, ic: 1, oc: 2, oh: 16, ow: 16, kh: 3,kw:3
+MS: Store Instrn. Stride:8.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:512.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:107520.0
+MS: Store Instrn. Stride:851968.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:2304.0
+MS: Store Instrn. Stride:32.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407d26d8>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f7f407d2940>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407d2a58>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f7f407d2ba8>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f7f407d2c18>
+MS. In pu_compile. Alloc size: pool1/MaxPooling[1,104,104,32] (FXP16 (8,8))
+MS. Before t_out_addr: 0x127fc000, len:4,pad_offset:3424.0
+MS. FInal t_out_addr: 0x127fdac0, pad_offset:6848
+OBUF.pop                  ->   R0
+R0         >>  #(14)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(14)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(14)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(14)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(14)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv2/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x127fc000 	 Weights : 0x12abb000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x12adf000 	 Outputs : 0x12ae0000
+MS: b: 1, ic: 1, oc: 8, oh: 8, ow: 8, kh: 3,kw:3
+MS: Store Instrn. Stride:8.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:512.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:54272.0
+MS: Store Instrn. Stride:425984.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:256.0
+MS: Store Instrn. Stride:18432.0
+MS: Store Instrn. Stride:128.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407dc0b8>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f7f407dc320>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407dc438>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f7f407dc588>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f7f407dc5f8>
+MS. In pu_compile. Alloc size: pool2/MaxPooling[1,52,52,64] (FXP16 (7,9))
+MS. Before t_out_addr: 0x15a6b000, len:4,pad_offset:3520.0
+MS. FInal t_out_addr: 0x15a6cb80, pad_offset:7040
+OBUF.pop                  ->   R0
+R0         >>  #(12)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(14)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv3/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x15a6b000 	 Weights : 0x15bd8000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x15c68000 	 Outputs : 0x15c69000
+MS: b: 1, ic: 8, oc: 1, oh: 4, ow: 4, kh: 3,kw:3
+MS: Store Instrn. Stride:512.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:27648.0
+MS: Store Instrn. Stride:212992.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:256.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:4608.0
+MS: Store Instrn. Stride:16.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407dca58>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f7f407dccc0>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407dcdd8>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f7f407dcf28>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f7f407dcf98>
+MS. In pu_compile. Alloc size: pool3/MaxPooling[1,26,26,128] (FXP16 (6,10))
+MS. Before t_out_addr: 0x17430000, len:4,pad_offset:3712.0
+MS. FInal t_out_addr: 0x17431d00, pad_offset:7424
+OBUF.pop                  ->   R0
+R0         >>  #(13)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(13)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv4/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x17430000 	 Weights : 0x174f4000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x17734000 	 Outputs : 0x17735000
+MS: b: 1, ic: 8, oc: 1, oh: 2, ow: 2, kh: 3,kw:3
+MS: Store Instrn. Stride:512.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:14336.0
+MS: Store Instrn. Stride:106496.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:256.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:9216.0
+MS: Store Instrn. Stride:16.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407db438>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f7f407db6a0>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407db7b8>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f7f407db908>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f7f407db978>
+MS. In pu_compile. Alloc size: pool4/MaxPooling[1,13,13,256] (FXP16 (6,10))
+MS. Before t_out_addr: 0x1831a000, len:4,pad_offset:4096.0
+MS. FInal t_out_addr: 0x1831c000, pad_offset:8192
+OBUF.pop                  ->   R0
+R0         >>  #(13)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(14)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv5/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x1831a000 	 Weights : 0x1838b000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x18c8b000 	 Outputs : 0x18c8d000
+MS: b: 1, ic: 2, oc: 2, oh: 14.0, ow: 14.0, kh: 3,kw:3
+MS: Store Instrn. Stride:16.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:36864.0
+MS: Store Instrn. Stride:32.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407dbdd8>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f7f407df080>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407df198>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f7f407df2e8>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f7f407df358>
+MS. In pu_compile. Alloc size: pool5/MaxPooling[1,13,13,512] (FXP16 (5,11))
+MS. Before t_out_addr: 0x192ed000, len:4,pad_offset:8192.0
+MS. FInal t_out_addr: 0x192f1000, pad_offset:16384
+OBUF.pop                  ->   R0
+R0         >>  #(12)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(14)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv6/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x192ed000 	 Weights : 0x193ce000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x1b7ce000 	 Outputs : 0x1b7d2000
+MS: b: 1, ic: 2, oc: 2, oh: 13.0, ow: 13.0, kh: 3,kw:3
+MS: Store Instrn. Stride:16.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:73728.0
+MS: Store Instrn. Stride:32.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407df7b8>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f7f407dfa20>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407dfb38>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f7f407dfc88>
+MS. In pu_compile. Alloc size: conv6/leakyReLU/LeakyReLU[1,13,13,1024] (FXP16 (7,9))
+MS. Before t_out_addr: 0x1c267000, len:4,pad_offset:16384.0
+MS. FInal t_out_addr: 0x1c26f000, pad_offset:32768
+OBUF.pop                  ->   R0
+R0         >>  #(13)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(14)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+R0                        -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv7/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x1c267000 	 Weights : 0x1c429000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x20c29000 	 Outputs : 0x20c2d000
+MS: b: 1, ic: 2, oc: 2, oh: 13.0, ow: 13.0, kh: 3,kw:3
+MS: Store Instrn. Stride:16.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:147456.0
+MS: Store Instrn. Stride:32.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407e40f0>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f7f407e4358>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407e4470>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f7f407e45c0>
+MS. In pu_compile. Alloc size: conv7/leakyReLU/LeakyReLU[1,13,13,1024] (FXP16 (4,12))
+MS. Before t_out_addr: 0x216c2000, len:4,pad_offset:0.0
+MS. FInal t_out_addr: 0x216c2000, pad_offset:0
+OBUF.pop                  ->   R0
+R0         >>  #(12)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(13)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+R0                        -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv8/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x216c2000 	 Weights : 0x21814000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x21914000 	 Outputs : 0x21915000
+MS: b: 1, ic: 128, oc: 1, oh: 1, ow: 1, kh: 1,kw:1
+MS: Store Instrn. Stride:2048.0
+MS: Store Instrn. Stride:1024.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:26624.0
+MS: Store Instrn. Stride:13312.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:1024.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:8192.0
+MS: Store Instrn. Stride:16.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f7f407e4908>
+MS. In pu_compile. Alloc size: conv8/TypeCastOp[1,13,13,125] (FXP16 (5,11))
+MS. Before t_out_addr: 0x219be000, len:4,pad_offset:0.0
+MS. FInal t_out_addr: 0x219be000, pad_offset:0
+OBUF.pop                  ->   R0
+R0         >>  #(15)      ->   R0
+R0                        -> ST-DDR.push
+Number of instructions: 1543
+[   75497472 -1879048192 -1844092928 ... -1342177272 -2147483648
+ -2147483647]

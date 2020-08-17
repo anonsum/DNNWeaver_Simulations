@@ -1,0 +1,199 @@
+#iverilog -o my_design -c file_list.txt
+#vvp my_design
+#
+#include/pu_controller_bin.vh
+#include/common.vh
+#include/rd_mem_controller.vh
+#include/wr_mem_controller.vh
+####################################
+#  Zynq-Wrapper
+####################################
+../hardware/source/top/zynq_wrapper.v
+#source/top/zynq_wrapper_loopback.v
+####################################
+#  AXI_MASTER
+####################################
+../hardware/source/axi_master/axi_master.v
+../hardware/source/axi_master_wrapper/axi_master_wrapper.v
+../hardware/source/axi_master/wburst_counter.v
+testbench/axi_master/axi_master_tb.v
+testbench/axi_master_wrapper/axi_master_wrapper_tb.v
+testbench/axi_master/axi_master_tb_driver.v
+####################################
+#  FIFO
+####################################
+../hardware/source/primitives/FIFO/fifo.v
+../hardware/source/primitives/FIFO/fifo_fwft.v
+../hardware/source/primitives/FIFO/xilinx_bram_fifo.v
+####################################
+#  ROM
+####################################
+../hardware/source/primitives/ROM/ROM.v
+####################################
+#  AXI_SLAVE
+####################################
+../hardware/source/axi_slave/axi_slave.v
+testbench/axi_slave/axi_slave_tb.v
+testbench/axi_slave/axi_slave_tb_driver.v
+####################################
+#  DW accelerator
+####################################
+../hardware/source/dnn_accelerator/dnn_accelerator.v
+../hardware/source/dnn_accelerator/dnn_accelerator_4AXI.v
+testbench/dnn_accelerator/dnn_accelerator_tb.v
+testbench/dnn_accelerator/dnn_accelerator_tb_driver.v
+####################################
+#  Memory Controller
+####################################
+../hardware/source/mem_controller/mem_controller.v
+../hardware/source/mem_controller/mem_controller_top.v
+../hardware/source/mem_controller/mem_controller_top_4AXI.v
+testbench/mem_controller_4AXI/mem_controller_tb_4AXI.v
+testbench/mem_controller_4AXI/mem_controller_tb_driver_4AXI.v
+testbench/mem_controller/mem_controller_tb.v
+testbench/mem_controller/mem_controller_tb_driver.v
+testbench/mem_controller/dnn_accelerator_dummy.v
+testbench/mem_controller_4AXI/dnn_accelerator_dummy_4AXI.v
+testbench/mem_controller/PU_dummy.v
+testbench/mem_controller/pooling_dummy.v
+testbench/mem_controller/PE_dummy.v
+####################################
+#  MACC
+####################################
+../hardware/source/primitives/MACC/multiplier.v
+../hardware/source/primitives/MACC/macc.v
+####################################
+#  COUNTER
+####################################
+../hardware/source/primitives/COUNTER/counter.v
+####################################
+#  PU
+####################################
+../hardware/source/PU/PU.v
+testbench/PU/PU_tb.v
+testbench/PU/PU_tb_driver.v
+####################################
+#  PE
+####################################
+../hardware/source/PE/PE.v
+####################################
+#  REGISTER
+####################################
+../hardware/source/primitives/REGISTER/register.v
+####################################
+#  NORMALIZATION
+####################################
+../hardware/source/normalization/normalization.v
+####################################
+#  PISO
+####################################
+../hardware/source/primitives/PISO/piso.v
+../hardware/source/primitives/PISO/piso_norm.v
+####################################
+#  SIPO
+####################################
+../hardware/source/primitives/SIPO/sipo.v
+####################################
+#  POOLING
+####################################
+../hardware/source/pooling/pooling.v
+testbench/pooling/pooling_tb.v
+testbench/pooling/pooling_tb_driver.v
+####################################
+#  COMPARATOR
+####################################
+../hardware/source/primitives/COMPARATOR/comparator.v
+####################################
+#  MUX
+####################################
+../hardware/source/primitives/MUX/mux_2x1.v
+####################################
+#  PE_buffer
+####################################
+../hardware/source/PE_buffer/PE_buffer.v
+testbench/top/top_tb.v
+####################################
+#  CLK_RST_GEN
+####################################
+testbench/common/clk_rst_driver.v
+####################################
+#  Test status
+####################################
+testbench/common/test_status.v
+####################################
+#  LFSR
+####################################
+../hardware/source/primitives/lfsr/lfsr.v
+####################################
+#  Convolution
+####################################
+testbench/convolution/convolution_tb.v
+testbench/convolution/convolution_tb_driver.v
+####################################
+#  Front-End
+####################################
+../hardware/source/vectorgen/vectorgen.v
+testbench/vectorgen/vectorgen_tb.v
+testbench/vectorgen/vectorgen_tb_driver.v
+####################################
+#  Controller
+####################################
+../hardware/source/PU/PU_controller.v
+testbench/controller/controller_tb.v
+testbench/controller/controller_tb_driver.v
+####################################
+#  Weight Buffer
+####################################
+../hardware/source/weight_buffer/weight_buffer.v
+testbench/weight_buffer/weight_buffer_tb.v
+testbench/weight_buffer/weight_buffer_tb_driver.v
+####################################
+#  RAM
+####################################
+../hardware/source/primitives/RAM/ram.v
+####################################
+#  Inner-Product
+####################################
+testbench/inner_product/inner_product_tb.v
+testbench/inner_product/inner_product_tb_driver.v
+####################################
+#  Data-Width Converter
+####################################
+../hardware/source/data_packer/data_packer.v
+../hardware/source/data_unpacker/data_unpacker.v
+####################################
+#  Activation
+####################################
+../hardware/source/activation/activation.v
+####################################
+#  READ INFO
+####################################
+../hardware/source/read_info/read_info.v
+testbench/read_info/read_info_tb.v
+testbench/read_info/read_info_tb_driver.v
+####################################
+#  Buffer Read Counter
+####################################
+../hardware/source/buffer_read_counter/buffer_read_counter.v
+testbench/buffer_read_counter/buffer_read_counter_tb.v
+testbench/buffer_read_counter/buffer_read_counter_tb_driver.v
+####################################
+#  Loopback
+####################################
+../hardware/source/loopback/loopback_top.v
+../hardware/source/loopback/loopback.v
+testbench/loopback/loopback_tb.v
+testbench/loopback/loopback_tb_driver.v
+####################################
+#  Loopback - PU controller
+####################################
+../hardware/source/loopback_pu_controller/loopback_pu_controller_top.v
+../hardware/source/loopback_pu_controller/loopback_pu_controller.v
+testbench/loopback_pu_controller/loopback_pu_controller_tb.v
+testbench/loopback_pu_controller/loopback_pu_controller_tb_driver.v
+####################################
+#  Serializer-Deserializer
+####################################
+../hardware/source/serdes/serdes.v
+testbench/serdes/serdes_tb.v
+testbench/serdes/serdes_tb_driver.v

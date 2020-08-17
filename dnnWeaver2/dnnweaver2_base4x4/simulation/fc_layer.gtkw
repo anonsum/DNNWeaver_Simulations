@@ -1,0 +1,86 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Thu May 23 07:04:06 2019
+[*]
+[dumpfile] "/local/workspace/ee210056/dnnweaver_v2/dnnweaver2_jk/dnnweaver2-master_fc/sim_expt/img_8x8_2convpool_2fc/tb_dnnw2_ctrl.vcd"
+[dumpfile_mtime] "Thu May 23 06:56:55 2019"
+[dumpfile_size] 7547194
+[savefile] "/local/workspace/ee210056/dnnweaver_v2/dnnweaver2_jk/dnnweaver2-master_fc/sim_expt/img_8x8_2convpool_2fc/fc_layer.gtkw"
+[timestart] 16287400
+[size] 1024 667
+[pos] -1 -1
+*-16.035789 16356000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_dnnw2_ctrl.
+[treeopen] tb_dnnw2_ctrl.UUT.
+[treeopen] tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[0].
+[treeopen] tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[1].
+[treeopen] tb_dnnw2_ctrl.UUT.u_pu.u_ctrl.
+[sst_width] 45
+[signals_width] 528
+[sst_expanded] 0
+[sst_vpaned_height] 207
+@24
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[0].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[1].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[2].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[3].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[0].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[1].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[2].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[3].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[3].pe_out[33:0]
+tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].acc_out_q[63:0]
+tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].sys_col_out[33:0]
+tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].add_in[63:0]
+@200
+-
+@24
+tb_dnnw2_ctrl.UUT.sys_array.sys_obuf_write_addr[10:0]
+tb_dnnw2_ctrl.UUT.sys_array.sys_obuf_write_req
+@28
+tb_dnnw2_ctrl.UUT.u_ctrl.block_done
+@24
+tb_dnnw2_ctrl.UUT.sys_array.accumulator_out[255:0]
+@200
+-
+@22
+tb_dnnw2_ctrl.ibuf_awaddr[41:0]
+@28
+tb_dnnw2_ctrl.ibuf_awready
+tb_dnnw2_ctrl.ibuf_awvalid
+@22
+tb_dnnw2_ctrl.ibuf_wdata[63:0]
+@29
+tb_dnnw2_ctrl.ibuf_wready
+@28
+tb_dnnw2_ctrl.ibuf_wvalid
+@22
+tb_dnnw2_ctrl.UUT.ibuf_mem.mws_araddr[41:0]
+@28
+tb_dnnw2_ctrl.UUT.ibuf_mem.mws_arready
+tb_dnnw2_ctrl.UUT.ibuf_mem.mws_arvalid
+@22
+tb_dnnw2_ctrl.UUT.ibuf_mem.mws_rdata[63:0]
+@28
+tb_dnnw2_ctrl.UUT.ibuf_mem.mws_rready
+tb_dnnw2_ctrl.UUT.ibuf_mem.mws_rvalid
+@200
+-
+@22
+tb_dnnw2_ctrl.UUT.u_pu.pu_ddr_st_base_addr[41:0]
+tb_dnnw2_ctrl.UUT.u_pu.u_ctrl.st_tensor_base_addr[41:0]
+@28
+tb_dnnw2_ctrl.UUT.u_pu.u_ctrl.base_addr_id[1:0]
+tb_dnnw2_ctrl.UUT.u_pu.u_ctrl.base_addr_part[1:0]
+tb_dnnw2_ctrl.UUT.u_pu.u_ctrl.base_addr_v
+@22
+tb_dnnw2_ctrl.UUT.u_pu.u_ctrl.base_addr[20:0]
+tb_dnnw2_ctrl.UUT.u_pu.u_ctrl.BASE_ADDR_CFG[0].part_st_base_addr[20:0]
+tb_dnnw2_ctrl.UUT.u_pu.u_ctrl.loop_id[4:0]
+tb_dnnw2_ctrl.UUT.u_pu.u_ctrl.imm[15:0]
+tb_dnnw2_ctrl.UUT.u_pu.u_ctrl.inst_wr_data[31:0]
+tb_dnnw2_ctrl.UUT.cfg_pu_inst[31:0]
+@28
+tb_dnnw2_ctrl.UUT.cfg_pu_inst_v
+[pattern_trace] 1
+[pattern_trace] 0

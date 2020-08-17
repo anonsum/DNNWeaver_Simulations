@@ -1,0 +1,185 @@
+[*]
+[*] GTKWave Analyzer v3.3.61 (w)1999-2014 BSI
+[*] Mon Nov 18 10:54:35 2019
+[*]
+[dumpfile] "/local/workspace/ee209975/dnnweaver_version2/dnnw2_8x8arry_FC_4nodes_baseline_working/dnnweaver2_jk/sim_project_8x8/tb_dnnw2_ctrl.vcd"
+[dumpfile_mtime] "Mon Nov 18 10:30:35 2019"
+[dumpfile_size] 87044738
+[savefile] "/local/workspace/ee209975/dnnweaver_version2/dnnw2_8x8arry_FC_4nodes_baseline_working/dnnweaver2_jk/sim_project_8x8/sys_arr_1opchnl_conv2d.gtkw"
+[timestart] 83080530
+[size] 1024 667
+[pos] -1 -1
+*-13.077804 83086490 10318000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_dnnw2_ctrl.
+[treeopen] tb_dnnw2_ctrl.UUT.
+[treeopen] tb_dnnw2_ctrl.UUT.ibuf_mem.buf_ram.
+[treeopen] tb_dnnw2_ctrl.UUT.obuf_mem.buf_ram.
+[treeopen] tb_dnnw2_ctrl.UUT.obuf_mem.buf_ram.LOOP_M[0].buf_ram.
+[treeopen] tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].
+[treeopen] tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].adder_inst.
+[treeopen] tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].adder_inst.genblk1.
+[treeopen] tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].
+[treeopen] tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[3].LOOP_OUTPUT_FORWARD[1].
+[treeopen] tb_dnnw2_ctrl.UUT.u_pu.simd_core.
+[treeopen] tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].
+[treeopen] tb_dnnw2_ctrl.UUT.wbuf_mem.buf_ram.
+[sst_width] 72
+[signals_width] 286
+[sst_expanded] 0
+[sst_vpaned_height] 244
+@200
+-
+@420
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[0].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[1].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[2].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[3].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[4].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[5].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[6].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[7].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[0].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[1].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[2].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[3].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[4].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[5].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[6].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[7].b[15:0]
+@24
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[7].pe_out[34:0]
+tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].sys_col_out[34:0]
+tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].add_in[63:0]
+@22
+tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].acc_out_q[63:0]
+@24
+tb_dnnw2_ctrl.UUT.sys_array.sys_obuf_write_addr[10:0]
+@28
+tb_dnnw2_ctrl.UUT.sys_array.sys_obuf_write_req
+@24
+[color] 3
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.obuf_ld_stream_write_data[255:0]
+@28
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].scalar_alu.fn_valid
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].scalar_alu.fn[2:0]
+@22
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].scalar_alu.imm[15:0]
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].scalar_alu._alu_in0[15:0]
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].scalar_alu._alu_in1[15:0]
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].scalar_alu.alu_out[63:0]
+tb_dnnw2_ctrl.UUT.u_pu.pu_ddr_awaddr[41:0]
+tb_dnnw2_ctrl.UUT.u_pu.pu_ddr_wdata[63:0]
+[color] 2
+tb_dnnw2_ctrl.UUT.cl_ddr4_awaddr[41:0]
+@28
+tb_dnnw2_ctrl.UUT.cl_ddr4_wready
+tb_dnnw2_ctrl.UUT.cl_ddr4_wvalid
+@22
+[color] 2
+tb_dnnw2_ctrl.UUT.cl_ddr4_wdata[63:0]
+[color] 3
+tb_dnnw2_ctrl.UUT.cl_ddr0_araddr[41:0]
+@28
+tb_dnnw2_ctrl.UUT.cl_ddr0_arready
+tb_dnnw2_ctrl.UUT.cl_ddr0_arvalid
+@24
+[color] 3
+tb_dnnw2_ctrl.UUT.cl_ddr0_rdata[63:0]
+@200
+-
+-
+@22
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[0].a[15:0]
+@24
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[1].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[2].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[3].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[4].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[5].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[6].a[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[7].a[15:0]
+@22
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[0].b[15:0]
+@24
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[1].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[2].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[3].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[4].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[5].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[6].b[15:0]
+tb_dnnw2_ctrl.UUT.sys_array.LOOP_INPUT_FORWARD[0].LOOP_OUTPUT_FORWARD[7].b[15:0]
+@22
+tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].acc_out_q[63:0]
+@28
+tb_dnnw2_ctrl.UUT.u_pu.alu_fn[2:0]
+tb_dnnw2_ctrl.UUT.u_pu.alu_fn_valid
+@22
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].scalar_alu.imm[15:0]
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].scalar_alu._alu_in0[15:0]
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].scalar_alu._alu_in1[15:0]
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ALU_INST[0].scalar_alu.alu_out_q[63:0]
+tb_dnnw2_ctrl.UUT.cl_ddr4_awaddr[41:0]
+@28
+tb_dnnw2_ctrl.UUT.cl_ddr4_awready
+tb_dnnw2_ctrl.UUT.cl_ddr4_awvalid
+@22
+tb_dnnw2_ctrl.UUT.cl_ddr4_wdata[63:0]
+tb_dnnw2_ctrl.UUT.sys_obuf_write_addr[10:0]
+tb_dnnw2_ctrl.UUT.cl_ddr0_araddr[41:0]
+@28
+tb_dnnw2_ctrl.UUT.cl_ddr0_arready
+@22
+tb_dnnw2_ctrl.UUT.cl_ddr0_rdata[63:0]
+@200
+-
+@24
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.obuf_ld_stream_write_req
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.obuf_ld_stream_write_ready
+@28
+tb_dnnw2_ctrl.UUT.obuf_mem.pu_buf_read_req
+tb_dnnw2_ctrl.UUT.obuf_mem.pu_buf_read_ready
+@24
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ddr_st_stream_write_req
+tb_dnnw2_ctrl.UUT.u_pu.pu_compute_start
+tb_dnnw2_ctrl.UUT.u_pu.pu_write_done
+@28
+tb_dnnw2_ctrl.UUT.sys_array.ACCUMULATOR[0].local_acc
+@22
+tb_dnnw2_ctrl.UUT.sys_array.obuf_write_data[511:0]
+tb_dnnw2_ctrl.UUT.obuf_ld_stream_write_data[255:0]
+tb_dnnw2_ctrl.UUT.obuf_out0[63:0]
+tb_dnnw2_ctrl.UUT.obuf_out1[63:0]
+tb_dnnw2_ctrl.UUT.obuf_out2[63:0]
+tb_dnnw2_ctrl.UUT.obuf_out3[63:0]
+tb_dnnw2_ctrl.UUT.obuf_out4[63:0]
+@23
+tb_dnnw2_ctrl.pubuf_axim_driver.M_AXI_WDATA[63:0]
+@28
+tb_dnnw2_ctrl.UUT.sys_array.obuf_write_req
+@24
+tb_dnnw2_ctrl.UUT.u_pu.simd_core.ddr_st_stream_write_ready
+tb_dnnw2_ctrl.UUT.u_pu.ld_obuf_addr[11:0]
+@28
+tb_dnnw2_ctrl.UUT.u_pu.ld_obuf_req
+@24
+tb_dnnw2_ctrl.UUT.u_pu.pu_block_start
+tb_dnnw2_ctrl.UUT.u_pu.pu_compute_done
+tb_dnnw2_ctrl.UUT.u_pu.pu_compute_ready
+tb_dnnw2_ctrl.UUT.u_pu.pu_ddr_araddr[41:0]
+tb_dnnw2_ctrl.UUT.u_pu.pu_ddr_rdata[63:0]
+@200
+-
+-
+-
+@22
+tb_dnnw2_ctrl.UUT.obuf_mem.mws_awaddr[41:0]
+@28
+tb_dnnw2_ctrl.UUT.obuf_mem.mws_awready
+tb_dnnw2_ctrl.UUT.obuf_mem.mws_awvalid
+@22
+tb_dnnw2_ctrl.UUT.obuf_mem.mws_wdata[255:0]
+@28
+tb_dnnw2_ctrl.UUT.obuf_mem.mws_wready
+tb_dnnw2_ctrl.UUT.obuf_mem.mws_wvalid
+[pattern_trace] 1
+[pattern_trace] 0

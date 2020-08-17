@@ -1,0 +1,139 @@
+Compiling VVP ...
+ ... VVP file version 10.2 (stable)
+Compile cleanup...
+ ...     3553 functors (net_fun pool=524288 bytes)
+               1400 logic
+                  0 bufif
+                  1 resolv
+                876 signals
+ ...     3397 filters (net_fil pool=524288 bytes)
+ ...    18586 opcodes (466944 bytes)
+ ...     3616 nets
+ ...     3553 vvp_nets (1048544 bytes)
+ ...        0 arrays (0 words)
+ ...       48 memories
+                 48 logic (8403329 words)
+                  0 real (0 words)
+ ...      811 scopes
+ ... 0.068941 seconds, 182392.0/140492.0/2044.0 KBytes size/rss/shared
+Running ...
+ ...execute EndOfCompile callbacks
+ ...propagate initialization events
+ ...execute StartOfSim callbacks
+ ...run scheduler
+WARNING: ../hardware/source/primitives/ROM/ROM.v:47: $readmemb(../hardware/include/norm_lut.vh): Too many words in the file for the requested range [0:63].
+WARNING: ../hardware/source/mem_controller/mem_controller.v:169: $readmemb(../hardware/include/rd_mem_controller.vh): Not enough words in the file for the requested range [0:7].
+WARNING: ../hardware/source/mem_controller/mem_controller.v:170: $readmemb(../hardware/include/wr_mem_controller.vh): Not enough words in the file for the requested range [0:7].
+WARNING: ../hardware/source/PU/PU_controller.v:309: $readmemb(../hardware/include/pu_controller_bin.vh): Not enough words in the file for the requested range [0:63].
+1000001000000001100000101111010000000000000110000000000001000000001100000000000000000000000000000000000001101100000000100000000000000000000000000001001100000001000000000100
+WARNING: testbench/axi_master/axi_master_tb_driver.v:212: $readmemh(weightimghex_in.txt): Not enough words in the file for the requested range [0:8388608].
+RAM Addr: 00000000, data:0000000000000010
+RAM Addr: 00000001, data:0000000000000010
+RAM Addr: 00000002, data:0000000000000010
+RAM Addr: 00000003, data:0000000000000010
+RAM Addr: 00000004, data:0000000000000027
+RAM Addr: 00000005, data:000000000000ffed
+RAM Addr: 00000006, data:0000000000000004
+VCD info: dumpfile dnn_accelerator_tb.vcd opened for output.
+
+[1;34m***********************************************
+DNN ACCELERATOR - Test Begin
+***********************************************
+[0m
+Getting MMAP from file ../hardware/include/tb_mmap.txt
+WARNING: testbench/dnn_accelerator/dnn_accelerator_tb.v:490: $readmemb(../hardware/include/tb_mmap.vh): Not enough words in the file for the requested range [0:1023].
+*********************
+Layer Number           0
+Layer Type  0
+Input address = 880d8f90
+Input size =         63 x          1 x         28 x         28
+Weight address = 88000000
+Weight size =         20 x          1 x          5 x          5
+*********************
+*********************
+Layer Number           1
+Layer Type  0
+Input address = 880d9690
+Input size =         63 x         20 x         12 x         12
+Weight address = 88000500
+Weight size =         50 x         20 x          5 x          5
+*********************
+*********************
+Layer Number           2
+Layer Type  1
+Input address = 880db490
+Input size =         63 x         50 x          4 x          4
+Weight address = 8800ff00
+Weight size =        500 x          1 x        800 x          1
+*********************
+*********************
+Layer Number           3
+Layer Type  1
+Input address = 880eed10
+Input size =         63 x        500 x          1 x          1
+Weight address = 880d50f0
+Weight size =         10 x          1 x        500 x          1
+*********************
+Finished layer -          0
+Finished layer -          1
+Finished layer -          2
+Finished layer -          3
+Read count =      163896
+Write_count =        1290
+MS : Printing Output
+Addr: 000b4ee8, Data:   1701
+Addr: 000b4ee9, Data:    213
+Addr: 000b4eea, Data:    187
+Addr: 000b4eeb, Data:   -496
+Addr: 000b4eec, Data:   -938
+Addr: 000b4eed, Data:   -656
+Addr: 000b4eee, Data:    609
+Addr: 000b4eef, Data:   -678
+Addr: 000b4ef0, Data:    778
+Addr: 000b4ef1, Data:   -416
+Addr: 000b4ef2, Data:      0
+Addr: 000b4ef3, Data:      0
+Addr: 000b4ef4, Data:      0
+Addr: 000b4ef5, Data:      0
+Addr: 000b4ef6, Data:      0
+Addr: 000b4ef7, Data:      0
+Finished layer -          0
+Finished layer -          1
+Finished layer -          2
+Finished layer -          3
+Read count =      163896
+Write_count =        1290
+MS : Printing Output
+Addr: 000b4ee8, Data:   1701
+Addr: 000b4ee9, Data:    213
+Addr: 000b4eea, Data:    187
+Addr: 000b4eeb, Data:   -496
+Addr: 000b4eec, Data:   -938
+Addr: 000b4eed, Data:   -656
+Addr: 000b4eee, Data:    609
+Addr: 000b4eef, Data:   -678
+Addr: 000b4ef0, Data:    778
+Addr: 000b4ef1, Data:   -416
+Addr: 000b4ef2, Data:      0
+Addr: 000b4ef3, Data:      0
+Addr: 000b4ef4, Data:      0
+Addr: 000b4ef5, Data:      0
+Addr: 000b4ef6, Data:      0
+Addr: 000b4ef7, Data:      0
+
+[1;32m***********************************************
+DNN ACCELERATOR - Test Passed
+***********************************************
+[0m
+ ...execute Postsim callbacks
+ ... 424.699 seconds, 379004.0/337588.0/2464.0 KBytes size/rss/shared
+Event counts:
+     1619372 time steps (pool=128)
+    340787774 thread schedule events
+    478127402 assign events
+             ...assign(vec4) pool=9362
+             ...assign(vec8) pool=204
+             ...assign(real) pool=256
+             ...assign(word) pool=128
+             ...assign(word/r) pool=204
+    103483606 other events (pool=4096)

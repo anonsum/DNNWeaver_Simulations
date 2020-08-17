@@ -1,0 +1,24 @@
+11:03:16 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:03:18 INFO  : XSDB server has started successfully.
+11:03:19 INFO  : Processing command line option -hwspec E:/jayakumar/FPGACNNProject/dnnWeaver1/hardware/fpga/boarddesign/kintex7/sdk/zynq_wrapper.hdf.
+11:48:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:49:01 ERROR : Could not retrieve Flash Part information. Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+1. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+1. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+13:00:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:00:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Genesys 2 200300730417B" && level==0} -index 0' command is executed.
+13:01:05 INFO  : FPGA configured successfully with bitstream "E:/jayakumar/FPGACNNProject/dnnWeaver1/hardware/fpga/boarddesign/kintex7/sdk/zynq_wrapper_hw_platform_0/download.bit"
+13:26:18 INFO  : FPGA Cable Disconnected. All active launches will be terminated.
+13:54:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:54:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Genesys 2 200300730417B" && level==0} -index 0' command is executed.
+13:54:57 INFO  : FPGA configured successfully with bitstream "E:/jayakumar/FPGACNNProject/dnnWeaver1/hardware/fpga/boarddesign/kintex7/sdk/zynq_wrapper_hw_platform_0/download.bit"
+14:50:13 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:54:30 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:54:31 INFO  : XSDB server has started successfully.
+14:55:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:56:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Genesys 2 200300730417B" && level==0} -index 0' command is executed.
+14:56:10 INFO  : FPGA configured successfully with bitstream "E:/jayakumar/FPGACNNProject/dnnWeaver1/hardware/fpga/boarddesign/kintex7/sdk/demo/zynq_wrapper_hw_platform_0/download.bit"

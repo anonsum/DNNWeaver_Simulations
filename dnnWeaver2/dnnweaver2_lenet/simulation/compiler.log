@@ -1,0 +1,199 @@
+**************************************************
+List of ops (nodes) in the graph
+	Op name: conv0/Convolution
+	Op name: conv0/TypeCastOp
+	Op name: conv0/MaxPooling
+	Op name: conv1/Convolution
+	Op name: conv1/TypeCastOp
+	Op name: conv1/MaxPooling
+	Op name: fc0/Convolution
+	Op name: fc0/TypeCastOp
+	Op name: fc1/Convolution
+	Op name: fc1/TypeCastOp
+**************************************************
+**************************************************
+List of tensors (edges) in the graph
+	inputs/data[1,32,32,1] (FXP16 (8,8))
+	conv0/weights[20,5,5,1] (FXP16 (9,7))
+	conv0/biases[20] (FXP32 (12,20))
+	conv0/Convolution[1,28,28,20] (FXP64 (49,15))
+	conv0/TypeCastOp[1,28,28,20] (FXP16 (8,8))
+	conv0/MaxPooling[1,14,14,20] (FXP16 (8,8))
+	conv1/weights1[50,5,5,20] (FXP16 (9,7))
+	conv1/biases1[50] (FXP32 (12,20))
+	conv1/Convolution[1,10,10,50] (FXP64 (49,15))
+	conv1/TypeCastOp[1,10,10,50] (FXP16 (8,8))
+	conv1/MaxPooling[1,5,5,50] (FXP16 (8,8))
+	fc0/fcin[1,1,1,1300] (FXP16 (8,8))
+	fc0/weights1[500,1,1,1300] (FXP16 (9,7))
+	fc0/biases1[500] (FXP32 (12,20))
+	fc0/Convolution[1,1,1,500] (FXP64 (49,15))
+	fc0/TypeCastOp[1,1,1,500] (FXP16 (8,8))
+	fc1/fcin[1,1,1,500] (FXP16 (8,8))
+	fc1/weights1[10,1,1,500] (FXP16 (9,7))
+	fc1/biases1[10] (FXP32 (12,20))
+	fc1/Convolution[1,1,1,10] (FXP64 (49,15))
+	fc1/TypeCastOp[1,1,1,10] (FXP16 (8,8))
+**************************************************
+Accelerator object
+	Precision: 16
+	Systolic array size: 4 -rows x 4 -columns
+	IBUF size:    8,192.0 Bytes
+	WBUF size:    8,192.0 Bytes
+	OBUF size:   32,768.0 Bytes
+	BBUF size:   16,384.0 Bytes
+Double buffering enabled. Sizes of SRAM are halved
+MS :GraphCOmpile Done!!
+INFO:Graph Compiler:MS : In Layer :conv0/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x0 	 Weights : 0x8000
+INFO:Graph Compiler:MS : Addr -- Bias : 0xc000 	 Outputs : 0xd000
+MS: b: 1, ic: 1, oc: 5, oh: 4, ow: 4, kh: 5,kw:5
+MS: Store Instrn. Stride:1024.0
+MS: Store Instrn. Stride:17920.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:640.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f3e997b0b00>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f3e997b0ac8>
+MS. In pu_compile. Alloc size: conv0/MaxPooling[1,14,14,20] (FXP16 (8,8))
+MS. Before t_out_addr: 0xa7000, len:4,pad_offset:0.0
+MS. FInal t_out_addr: 0xa7000, pad_offset:0
+OBUF.pop                  ->   R0
+R0         >>  #(7)       ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(7)       ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(7)       ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(7)       ->   R1
+R1         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv1/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0xa7000 	 Weights : 0xaf000
+INFO:Graph Compiler:MS : Addr -- Bias : 0xe2000 	 Outputs : 0xe3000
+MS: b: 1, ic: 1, oc: 1, oh: 10.0, ow: 10.0, kh: 5,kw:5
+MS: Store Instrn. Stride:8.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:4000.0
+MS: Store Instrn. Stride:16.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f3e997b0f60>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f3e997b0f28>
+MS. In pu_compile. Alloc size: conv1/MaxPooling[1,5,5,50] (FXP16 (8,8))
+MS. Before t_out_addr: 0x116000, len:4,pad_offset:0.0
+MS. FInal t_out_addr: 0x116000, pad_offset:0
+OBUF.pop                  ->   R0
+R0         >>  #(7)       ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(7)       ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(7)       ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(7)       ->   R1
+R1         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :fc0/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x116000 	 Weights : 0x119000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x60f000 	 Outputs : 0x611000
+MS: b: 1, ic: 1, oc: 125, oh: 1, ow: 1, kh: 1,kw:1
+MS: Store Instrn. Stride:8.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:0.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f3e997bf4a8>
+MS. In pu_compile. Alloc size: fc0/TypeCastOp[1,1,1,500] (FXP16 (8,8))
+MS. Before t_out_addr: 0x615000, len:4,pad_offset:0.0
+MS. FInal t_out_addr: 0x615000, pad_offset:0
+OBUF.pop                  ->   R0
+R0         >>  #(7)       ->   R0
+R0                        -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :fc1/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x615000 	 Weights : 0x616000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x622000 	 Outputs : 0x623000
+MS: b: 1, ic: 64, oc: 1, oh: 1, ow: 1, kh: 1,kw:1
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:4000.0
+MS: Store Instrn. Stride:16.0
+MS: Store Instrn. Stride:512.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:2048.0
+MS: Store Instrn. Stride:0.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f3e997bf908>
+MS. In pu_compile. Alloc size: fc1/TypeCastOp[1,1,1,10] (FXP16 (8,8))
+MS. Before t_out_addr: 0x624000, len:4,pad_offset:0.0
+MS. FInal t_out_addr: 0x624000, pad_offset:0
+OBUF.pop                  ->   R0
+R0         >>  #(7)       ->   R0
+R0                        -> ST-DDR.push
+Number of instructions: 371
+[   75497472 -1879048192 -1845460992 -1828667392 -1862217728 -1876951040
+ -1843396608 -1826619392 -1860173824  1913651206  1611662336  1628456448
+  1630553600  1645215744  1661992960  1913651206  1611661344  1628439168
+  1630536320  1645215744  1661992960   270598145  1881210887  1610678280
+  1881210887  1610678528   291635201   560070657  1883373572  1627521056
+  1629618208  1883373571  1627521184  1629618336  1883373571  1627525504
+  1629622656   304283649  1885536260  1644363808  1885536260  1644363936
+  1885536260  1644364576   323223553  1887698948  1661206544  1879048196
+  1614807041  1631584256  1633681408  1648361473  1665138688  1879048196
+  1614807048  1631584256  1633681408  1648361477  1665138688  1879048195
+  1614807041  1631584261  1633681413  1648361472  1665138688  1879048195
+  1614807048  1631584276  1633681428  1648361472  1665138688  1879048196
+  1614807040  1631584257  1633681409  1648361497  1665138689 -1610612694
+ -1879048192 -1861586944 -1860173824  1879048193  1610612741  1879048193
+  1610612756  1879048193  1610612746  1879048193  1610612776  1879048196
+  1610612737  1879048192  1610612816  1889861638  1704985696  1723858944
+  1742733312  1889861638  1704984656  1723858944  1742733312  1881210881
+  1629487109  1881210881  1629487174  1881210884  1629487105  1881210880
+  1629488084 -1342177152  -822081792 -1342177151  -822081775 -1258291184
+ -1342177151  -822081775 -1258291184 -1342177151  -822081775 -1258291176
+ -2147483629 -2147483648    75497472 -1878364160 -1844776960 -1827790848
+ -1861341184 -1876951040 -1843396608 -1826619392 -1860173824  1913651204
+  1611661320  1628438528  1630535680  1645215776  1661992960  1913651212
+  1611661312  1628438560  1630535712  1645219744  1661992976   270598145
+  1881210893  1610678312  1881210893  1610678832   291635201   560070657
+  1883373577  1627521440  1629618592  1883373577  1627525184  1629622336
+   304283649  1885536260  1644363936  1885536260  1644364576   323223553
+  1887698944  1661206528  1879048196  1614807041  1631584256  1633681408
+  1648361473  1665138688  1879048196  1614807054  1631584256  1633681408
+  1648361477  1665138688  1879048201  1614807041  1631584257  1633681409
+  1648361472  1665138688  1879048201  1614807054  1631584266  1633681418
+  1648361472  1665138688 -1610612698 -1879048192 -1861132288 -1860173824
+  1879048193  1610612737  1879048193  1610612746  1879048196  1610612738
+  1879048196  1610612756  1879048192  1610612737  1879048192  1610612836
+  1889861644  1704984584  1723858944  1742733312  1881210884  1629487117
+  1881210884  1629487169  1881210880  1629487105  1881210880  1629487429
+ -1342177152  -822081792 -1342177151  -822081775 -1258291184 -1342177151
+  -822081775 -1258291184 -1342177151  -822081775 -1258291176 -2147483624
+ -2147483648    75497472 -1877909504 -1844342784 -1828655104 -1862201344
+ -1876951040 -1843396608 -1826619389 -1860173821  1913651524  1611661320
+  1628438528  1630535680  1645215776  1661992960   270598145  1881210880
+  1610678272   291635201   560070657  1883373692  1627521056  1629618208
+   304283649  1885536380  1644374176   323223553  1887699068  1661206544
+  1879048316  1614807040  1631584257  1633681409  1648361473  1665138689
+ -1610612706 -1879048192 -1862184960 -1860173821  1879048192  1610612861
+  1879048192  1610612861  1879048192  1610612861  1879048192  1610612861
+  1879048316  1610612737  1879048192  1610612861  1889861632  1704984576
+  1723858944  1742733312  1881210880  1629487229  1881210880  1629487229
+  1881211004  1629487105  1881210880  1629487229 -1342177152  -822081792
+ -1342177272 -2147483524 -2147483648    75497472 -1878962176 -1845403648
+ -1828577280 -1862127616 -1876951037 -1843396605 -1826619389 -1860173821
+  1913651202  1611661312  1628438560  1630535712  1645219744  1661992976
+  1913651201  1611661824  1628438528  1630535680  1645217792  1661992960
+   270598145  1881210943  1610678280   291635201   560070657  1883373568
+  1627521024  1629618176   304283649  1885536319  1644363808   323223553
+  1887698944  1661206528  1879048255  1614807041  1631584256  1633681408
+  1648361473  1665138688 -1610612706 -1879048192 -1862123520 -1860173821
+  1879048192  1610612737  1879048192  1610612737  1879048192  1610612737
+  1879048192  1610612737  1879048192  1610612737  1879048192  1610612737
+  1889861634  1704984584  1723858944  1742733312  1881210880  1629487107
+  1881210880  1629487107  1881210880  1629487105  1881210880  1629487107
+ -1342177152  -822081792 -1342177272 -2147483648 -2147483647]

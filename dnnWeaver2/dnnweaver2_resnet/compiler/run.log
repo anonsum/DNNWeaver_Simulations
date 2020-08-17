@@ -1,0 +1,1052 @@
+DEBUG:Graph Compiler:##################################################
+DEBUG:Graph Compiler:Combining graph ops to create macro op
+DEBUG:Graph Compiler:	conv1/Convolution
+DEBUG:Graph Compiler:MS: opname: conv1/Convolution, op : <dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ecd9a90>
+DEBUG:Graph Compiler:MS: First Node, Conv, New curr node  is : <dnnweaver2.compiler.MacroNode object at 0x7f546ece6c50>
+DEBUG:Graph Compiler:	conv1/TypeCastOp
+DEBUG:Graph Compiler:MS: opname: conv1/TypeCastOp, op : <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f546ecd9ba8>
+DEBUG:Graph Compiler:	conv1/LeakyReLU
+DEBUG:Graph Compiler:MS: opname: conv1/LeakyReLU, op : <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f546ecd9d30>
+DEBUG:Graph Compiler:	conv1/MaxPooling
+DEBUG:Graph Compiler:MS: opname: conv1/MaxPooling, op : <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f546ecd9b70>
+DEBUG:Graph Compiler:	res2a_branch1/Convolution
+DEBUG:Graph Compiler:MS: opname: res2a_branch1/Convolution, op : <dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ecd9fd0>
+DEBUG:Graph Compiler:MS:  op is : <dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ecd9fd0>
+DEBUG:Graph Compiler:	res2a_branch1/TypeCastOp
+DEBUG:Graph Compiler:MS: opname: res2a_branch1/TypeCastOp, op : <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f546ece6128>
+DEBUG:Graph Compiler:	res2a_branch2a/Convolution
+DEBUG:Graph Compiler:MS: opname: res2a_branch2a/Convolution, op : <dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece63c8>
+DEBUG:Graph Compiler:MS:  op is : <dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece63c8>
+DEBUG:Graph Compiler:	res2a_branch2a/TypeCastOp
+DEBUG:Graph Compiler:MS: opname: res2a_branch2a/TypeCastOp, op : <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f546ece64e0>
+DEBUG:Graph Compiler:	res2a_branch2a/LeakyReLU
+DEBUG:Graph Compiler:MS: opname: res2a_branch2a/LeakyReLU, op : <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f546ece6668>
+DEBUG:Graph Compiler:	res2a_branch2b/Convolution
+DEBUG:Graph Compiler:MS: opname: res2a_branch2b/Convolution, op : <dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece6898>
+DEBUG:Graph Compiler:MS:  op is : <dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece6898>
+DEBUG:Graph Compiler:	res2a_branch2b/TypeCastOp
+DEBUG:Graph Compiler:MS: opname: res2a_branch2b/TypeCastOp, op : <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f546ece69b0>
+DEBUG:Graph Compiler:Combining graph ops to create macro op - done!
+DEBUG:Graph Compiler:MS: MacroNodeArray size: 4
+DEBUG:Graph Compiler:MS: Cov Layer Params. ic=3, ic_padded=4, ic_numpadding: 1
+DEBUG:Graph Compiler:MS: Cov Layer Params. oc=64, oc_padded=64, oc_numpadding: 0
+DEBUG:Graph Compiler:MS: Cov Layer Params. Weights_pad =((0, 0), (0, 0), (0, 0), (0, 1)), bias_pad=(0, 0)
+DEBUG:Graph Compiler:MS: Cov Layer Params. Input Data_pad: [(0, 0), (3, 3), (3, 3), (0, 1)] Weights_pad :((0, 0), (3, 3), (3, 3), (0, 1)), conv out pad : ((0, 0), (0, 0), (0, 0), (0, 1))
+DEBUG:Graph Compiler:MS: Cov Layer Params. ic=64, ic_padded=64, ic_numpadding: 0
+DEBUG:Graph Compiler:MS: Cov Layer Params. oc=64, oc_padded=64, oc_numpadding: 0
+DEBUG:Graph Compiler:MS: Cov Layer Params. Weights_pad =((0, 0), (0, 0), (0, 0), (0, 0)), bias_pad=(0, 0)
+DEBUG:Graph Compiler:MS: Cov Layer Params. Input Data_pad: [(0, 0), (1, 1), (1, 1), (0, 0)] Weights_pad :((0, 0), (1, 1), (1, 1), (0, 0)), conv out pad : ((0, 0), (0, 0), (0, 0), (0, 0))
+DEBUG:Graph Compiler:MS: Cov Layer Params. ic=64, ic_padded=64, ic_numpadding: 0
+DEBUG:Graph Compiler:MS: Cov Layer Params. oc=64, oc_padded=64, oc_numpadding: 0
+DEBUG:Graph Compiler:MS: Cov Layer Params. Weights_pad =((0, 0), (0, 0), (0, 0), (0, 0)), bias_pad=(0, 0)
+DEBUG:Graph Compiler:MS: Cov Layer Params. Input Data_pad: [(0, 0), (1, 1), (1, 1), (0, 0)] Weights_pad :((0, 0), (1, 1), (1, 1), (0, 0)), conv out pad : ((0, 0), (0, 0), (0, 0), (0, 0))
+DEBUG:Graph Compiler:MS: Cov Layer Params. ic=64, ic_padded=64, ic_numpadding: 0
+DEBUG:Graph Compiler:MS: Cov Layer Params. oc=64, oc_padded=64, oc_numpadding: 0
+DEBUG:Graph Compiler:MS: Cov Layer Params. Weights_pad =((0, 0), (0, 0), (0, 0), (0, 0)), bias_pad=(0, 0)
+DEBUG:Graph Compiler:MS: Cov Layer Params. Input Data_pad: [(0, 0), (1, 1), (1, 1), (0, 0)] Weights_pad :((0, 0), (1, 1), (1, 1), (0, 0)), conv out pad : ((0, 0), (0, 0), (0, 0), (0, 0))
+DEBUG:Graph Compiler:##################################################
+DEBUG:Graph Compiler:##################################################
+DEBUG:Graph Compiler:Compiling macro op: conv1/Convolution+conv1/TypeCastOp+conv1/LeakyReLU+conv1/MaxPooling
+DEBUG:Graph Compiler:	Convolution op: conv1/Convolution
+DEBUG:Graph Compiler:	Other ops:
+DEBUG:Graph Compiler:		conv1/TypeCastOp
+DEBUG:Graph Compiler:		conv1/LeakyReLU
+DEBUG:Graph Compiler:		conv1/MaxPooling
+DEBUG:Graph Compiler:Optimizing tiling for Convolution layer conv1/Convolution
+DEBUG:Graph Compiler:MS : pool_pad: ((0, 0), (0, 1), (0, 1), (0, 0)), pool_stride: (1, 2, 2, 1), pool_kernel:(1, 3, 3, 1)
+DEBUG:Graph Compiler:MS : In optimize_tiling Fn
+DEBUG:Graph Compiler:MS : KernelSize(K): 7 , OutputSize(O) : 113 , OutputStride: 1
+DEBUG:Graph Compiler:MS : IC: 4 , OC: 64 , B: 1
+**************************************************
+List of ops (nodes) in the graph
+	Op name: conv1/Convolution
+	Op name: conv1/TypeCastOp
+	Op name: conv1/LeakyReLU
+	Op name: conv1/MaxPooling
+	Op name: res2a_branch1/Convolution
+	Op name: res2a_branch1/TypeCastOp
+	Op name: res2a_branch2a/Convolution
+	Op name: res2a_branch2a/TypeCastOp
+	Op name: res2a_branch2a/LeakyReLU
+	Op name: res2a_branch2b/Convolution
+	Op name: res2a_branch2b/TypeCastOp
+**************************************************
+**************************************************
+List of tensors (edges) in the graph
+	inputs/data[1,224,224,3] (FXP16 (8,8))
+	conv1/weights[64,7,7,3] (FXP16 (4,12))
+	conv1/biases[64] (FXP16 (-4,20))
+	conv1/Convolution[1,112,112,64] (FXP64 (44,20))
+	conv1/TypeCastOp[1,112,112,64] (FXP16 (8,8))
+	conv1/alpha[1] (FP32)
+	conv1/LeakyReLU[1,112,112,64] (FXP16 (8,8))
+	conv1/MaxPooling[1,56,56,64] (FXP16 (8,8))
+	res2a_branch1/weights[64,3,3,64] (FXP16 (4,12))
+	res2a_branch1/biases[64] (FXP16 (-4,20))
+	res2a_branch1/Convolution[1,56,56,64] (FXP64 (44,20))
+	res2a_branch1/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+	res2a_branch2a/weights[64,3,3,64] (FXP16 (4,12))
+	res2a_branch2a/biases[64] (FXP16 (-4,20))
+	res2a_branch2a/Convolution[1,56,56,64] (FXP64 (44,20))
+	res2a_branch2a/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+	res2a_branch2a/alpha[1] (FP32)
+	res2a_branch2a/LeakyReLU[1,56,56,64] (FXP16 (8,8))
+	res2a_branch2b/weights[64,3,3,64] (FXP16 (4,12))
+	res2a_branch2b/biases[64] (FXP16 (-4,20))
+	res2a_branch2b/Convolution[1,56,56,64] (FXP64 (44,20))
+	res2a_branch2b/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+**************************************************
+BRAM SIZE(bits): {'ibuf': 65536.0, 'obuf': 262144.0, 'wbuf': 65536.0, 'bbuf': 131072.0}
+Accelerator object
+	Precision: 16
+	Systolic array size: 4 -rows x 4 -columns
+	IBUF size:    8,192.0 Bytes
+	WBUF size:    8,192.0 Bytes
+	OBUF size:   32,768.0 Bytes
+	BBUF size:   16,384.0 Bytes
+Double buffering enabled. Sizes of SRAM are halved
+DEBUG:Graph Compiler:MS : tiling: {'B/b': (1, 1), 'OW/ow': (14, 9), 'OH/oh': (14, 9), 'IC/ic': (1, 4), 'OC/oc': (8, 8)} , order: ('B/b', 'OW/ow', 'OH/oh', 'IC/ic', 'OC/oc') 
+DEBUG:Graph Compiler:Optimal tiling and ordering:
+DEBUG:Graph Compiler:==Loop:    B/b, Tile: (1, 1)
+DEBUG:Graph Compiler:====Loop:  OW/ow, Tile: (14, 9)
+DEBUG:Graph Compiler:======Loop:  OH/oh, Tile: (14, 9)
+DEBUG:Graph Compiler:========Loop:  IC/ic, Tile: (1, 4)
+DEBUG:Graph Compiler:==========Loop:  OC/oc, Tile: (8, 8)
+DEBUG:Graph Compiler:============Loop:  KH/kh, Tile: (1, 7)
+DEBUG:Graph Compiler:==============Loop:  KW/kw, Tile: (1, 7)
+DEBUG:Graph Compiler:Allocating tensors for macro op: conv1/Convolution+conv1/TypeCastOp+conv1/LeakyReLU+conv1/MaxPooling
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:inputs/data, t:inputs/data[1,224,224,3] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 0,prev_ddr_ptr:0   fpga_size_in_bytes: 423200.0
+DEBUG:FPGA memory manager:Assigned address 0:423200.0 to tensor inputs/data[1,224,224,3] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS  tensor inputs/data[1,224,224,3] (FXP16 (8,8)) start address : 0x0 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/weights, t:conv1/weights[64,7,7,3] (FXP16 (4,12))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 1695744,prev_ddr_ptr:0   fpga_size_in_bytes: 25088.0
+DEBUG:FPGA memory manager:Assigned address 1695744:1720832.0 to tensor conv1/weights[64,7,7,3] (FXP16 (4,12))
+DEBUG:FPGA memory manager:MS  tensor conv1/weights[64,7,7,3] (FXP16 (4,12)) start address : 0x19e000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/biases, t:conv1/biases[64] (FXP16 (-4,20))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 1798144,prev_ddr_ptr:1695744   fpga_size_in_bytes: 128.0
+DEBUG:FPGA memory manager:Assigned address 1798144:1798272.0 to tensor conv1/biases[64] (FXP16 (-4,20))
+DEBUG:FPGA memory manager:MS  tensor conv1/biases[64] (FXP16 (-4,20)) start address : 0x1b7000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/Convolution, t:conv1/Convolution[1,112,112,64] (FXP64 (44,20))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 1802240,prev_ddr_ptr:1798144   fpga_size_in_bytes: 6537728.0
+DEBUG:FPGA memory manager:Assigned address 1802240:8339968.0 to tensor conv1/Convolution[1,112,112,64] (FXP64 (44,20))
+DEBUG:FPGA memory manager:MS  tensor conv1/Convolution[1,112,112,64] (FXP64 (44,20)) start address : 0x1b8000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/TypeCastOp, t:conv1/TypeCastOp[1,112,112,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 27955200,prev_ddr_ptr:1802240   fpga_size_in_bytes: 1605632.0
+DEBUG:FPGA memory manager:Assigned address 27955200:29560832.0 to tensor conv1/TypeCastOp[1,112,112,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS  tensor conv1/TypeCastOp[1,112,112,64] (FXP16 (8,8)) start address : 0x1aa9000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/alpha, t:conv1/alpha[1] (FP32)
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 34377728,prev_ddr_ptr:27955200   fpga_size_in_bytes: 4.0
+DEBUG:FPGA memory manager:Assigned address 34377728:34377732.0 to tensor conv1/alpha[1] (FP32)
+DEBUG:FPGA memory manager:MS  tensor conv1/alpha[1] (FP32) start address : 0x20c9000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/LeakyReLU, t:conv1/LeakyReLU[1,112,112,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 34381824,prev_ddr_ptr:34377728   fpga_size_in_bytes: 1605632.0
+DEBUG:FPGA memory manager:Assigned address 34381824:35987456.0 to tensor conv1/LeakyReLU[1,112,112,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS  tensor conv1/LeakyReLU[1,112,112,64] (FXP16 (8,8)) start address : 0x20ca000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/MaxPooling, t:conv1/MaxPooling[1,56,56,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 40804352,prev_ddr_ptr:34381824   fpga_size_in_bytes: 430592.0
+DEBUG:FPGA memory manager:Assigned address 40804352:41234944.0 to tensor conv1/MaxPooling[1,56,56,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS  tensor conv1/MaxPooling[1,56,56,64] (FXP16 (8,8)) start address : 0x26ea000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/weights, t:res2a_branch1/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 42528768,prev_ddr_ptr:40804352   fpga_size_in_bytes: 73728.0
+DEBUG:FPGA memory manager:Assigned address 42528768:42602496.0 to tensor res2a_branch1/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch1/weights[64,3,3,64] (FXP16 (4,12)) start address : 0x288f000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/biases, t:res2a_branch1/biases[64] (FXP16 (-4,20))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 42823680,prev_ddr_ptr:42528768   fpga_size_in_bytes: 128.0
+DEBUG:FPGA memory manager:Assigned address 42823680:42823808.0 to tensor res2a_branch1/biases[64] (FXP16 (-4,20))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch1/biases[64] (FXP16 (-4,20)) start address : 0x28d7000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/Convolution, t:res2a_branch1/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 42827776,prev_ddr_ptr:42823680   fpga_size_in_bytes: 1605632.0
+DEBUG:FPGA memory manager:Assigned address 42827776:44433408.0 to tensor res2a_branch1/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch1/Convolution[1,56,56,64] (FXP64 (44,20)) start address : 0x28d8000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/TypeCastOp, t:res2a_branch1/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 49250304,prev_ddr_ptr:42827776   fpga_size_in_bytes: 401408.0
+DEBUG:FPGA memory manager:Assigned address 49250304:49651712.0 to tensor res2a_branch1/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch1/TypeCastOp[1,56,56,64] (FXP16 (8,8)) start address : 0x2ef8000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/weights, t:res2a_branch2a/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 50855936,prev_ddr_ptr:49250304   fpga_size_in_bytes: 73728.0
+DEBUG:FPGA memory manager:Assigned address 50855936:50929664.0 to tensor res2a_branch2a/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch2a/weights[64,3,3,64] (FXP16 (4,12)) start address : 0x3080000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/biases, t:res2a_branch2a/biases[64] (FXP16 (-4,20))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 51150848,prev_ddr_ptr:50855936   fpga_size_in_bytes: 128.0
+DEBUG:FPGA memory manager:Assigned address 51150848:51150976.0 to tensor res2a_branch2a/biases[64] (FXP16 (-4,20))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch2a/biases[64] (FXP16 (-4,20)) start address : 0x30c8000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/Convolution, t:res2a_branch2a/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 51154944,prev_ddr_ptr:51150848   fpga_size_in_bytes: 1605632.0
+DEBUG:FPGA memory manager:Assigned address 51154944:52760576.0 to tensor res2a_branch2a/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch2a/Convolution[1,56,56,64] (FXP64 (44,20)) start address : 0x30c9000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/TypeCastOp, t:res2a_branch2a/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 57577472,prev_ddr_ptr:51154944   fpga_size_in_bytes: 401408.0
+DEBUG:FPGA memory manager:Assigned address 57577472:57978880.0 to tensor res2a_branch2a/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch2a/TypeCastOp[1,56,56,64] (FXP16 (8,8)) start address : 0x36e9000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/alpha, t:res2a_branch2a/alpha[1] (FP32)
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 59183104,prev_ddr_ptr:57577472   fpga_size_in_bytes: 4.0
+DEBUG:FPGA memory manager:Assigned address 59183104:59183108.0 to tensor res2a_branch2a/alpha[1] (FP32)
+DEBUG:FPGA memory manager:MS  tensor res2a_branch2a/alpha[1] (FP32) start address : 0x3871000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/LeakyReLU, t:res2a_branch2a/LeakyReLU[1,56,56,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 59187200,prev_ddr_ptr:59183104   fpga_size_in_bytes: 430592.0
+DEBUG:FPGA memory manager:Assigned address 59187200:59617792.0 to tensor res2a_branch2a/LeakyReLU[1,56,56,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch2a/LeakyReLU[1,56,56,64] (FXP16 (8,8)) start address : 0x3872000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/weights, t:res2a_branch2b/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 60911616,prev_ddr_ptr:59187200   fpga_size_in_bytes: 73728.0
+DEBUG:FPGA memory manager:Assigned address 60911616:60985344.0 to tensor res2a_branch2b/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch2b/weights[64,3,3,64] (FXP16 (4,12)) start address : 0x3a17000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/biases, t:res2a_branch2b/biases[64] (FXP16 (-4,20))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 61206528,prev_ddr_ptr:60911616   fpga_size_in_bytes: 128.0
+DEBUG:FPGA memory manager:Assigned address 61206528:61206656.0 to tensor res2a_branch2b/biases[64] (FXP16 (-4,20))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch2b/biases[64] (FXP16 (-4,20)) start address : 0x3a5f000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/Convolution, t:res2a_branch2b/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 61210624,prev_ddr_ptr:61206528   fpga_size_in_bytes: 1605632.0
+DEBUG:FPGA memory manager:Assigned address 61210624:62816256.0 to tensor res2a_branch2b/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch2b/Convolution[1,56,56,64] (FXP64 (44,20)) start address : 0x3a60000 
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/TypeCastOp, t:res2a_branch2b/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS: curr_ddr_ptr: 67633152,prev_ddr_ptr:61210624   fpga_size_in_bytes: 401408.0
+DEBUG:FPGA memory manager:Assigned address 67633152:68034560.0 to tensor res2a_branch2b/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:FPGA memory manager:MS  tensor res2a_branch2b/TypeCastOp[1,56,56,64] (FXP16 (8,8)) start address : 0x4080000 
+DEBUG:Graph Compiler:MS : In _conv_compile function
+DEBUG:Graph Compiler:MS : array: 4x4, last" False 
+DEBUG:Graph Compiler:Convolution op: conv1/Convolution
+DEBUG:Graph Compiler:PU Op: conv1/TypeCastOp
+DEBUG:Graph Compiler:PU Op: conv1/LeakyReLU
+DEBUG:Graph Compiler:PU Op: conv1/MaxPooling
+DEBUG:Graph Compiler:MS : Pool_pad_h_t: 0, pool_pad_h_b: 1
+DEBUG:Graph Compiler:MS : Pool_pad_w_l: 0, pool_pad_w_r: 1
+DEBUG:Graph Compiler:MS : Pool_pad_h: 1,pool_pad_w: 1
+INFO:Graph Compiler:MS : In Layer :conv1/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x0 	 Weights : 0x19e000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x1b7000 	 Outputs : 0x1b8000
+DEBUG:Graph Compiler:MS:  BaseAddress  array_size: 9, value: 2434793472
+DEBUG:Graph Compiler:MS : IC/ic: (1, 1), OC/oc: (8, 2) 
+DEBUG:Graph Compiler:MS:Before o/p loop processing, array_size:9
+DEBUG:Graph Compiler:MS: Tiling Item, l:B/b
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 1)
+DEBUG:Graph Compiler:MS: Tiling Item, l:OW/ow
+DEBUG:Graph Compiler:MS: Tiling Item, it:(14, 9)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(2, 9),stride:72.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(2, 9),stride:4608.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ecd9a90>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:OH/oh
+DEBUG:Graph Compiler:MS: Tiling Item, it:(14, 9)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(1, 9),stride:16560.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(1, 9),stride:520704.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ecd9a90>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:IC/ic
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 1)
+DEBUG:Graph Compiler:MS: Tiling Item, l:OC/oc
+DEBUG:Graph Compiler:MS: Tiling Item, it:(8, 2)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(3, 2),stride:64.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ecd9a90>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 2),stride:3136.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 2),stride:16.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:KH/kh
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 7)
+DEBUG:Graph Compiler:MS: Tiling Item, l:KW/kw
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 7)
+DEBUG:Graph Compiler:MS: (oh,ow):(9,9) conv_op_stride: (1, 2, 2, 1), (ih,iw): (23,15)
+DEBUG:Graph Compiler:MS: Shape: (1, 230, 230, 1, 4), tile shape: (1, 23, 15, 1),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 1
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:30
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 15
+DEBUG:Graph Compiler:MS: Buf: 0 ,s:15  stride:8.0
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:32
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 23
+DEBUG:Graph Compiler:MS: Buf: 0 ,s:23  stride:1840.0
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:34
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 1
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:34
+DEBUG:Graph Compiler:MS:array_size:34
+DEBUG:Graph Compiler:MS: Shape: (1, 113, 113, 16, 4), tile shape: (1, 9, 9, 2),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 2
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:2  stride:32.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:39
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 9
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:9  stride:512.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:42
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 9
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:9  stride:57856.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:45
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 1
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:45
+DEBUG:Graph Compiler:MS:array_size:45
+DEBUG:Graph Compiler:MS: Shape: (16, 7, 7, 1, 4, 4), tile shape: (2, 7, 7, 1),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 1
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:46
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 7
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:7  stride:32.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:48
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 7
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:7  stride:224.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:50
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 2
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:2  stride:1568.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:52
+DEBUG:Graph Compiler:MS:array_size:52
+DEBUG:Graph Compiler:MS: Shape: (16, 4), tile shape: (2,),range:range(0, 1) 
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 2
+DEBUG:Graph Compiler:MS: Buf: 3 ,s:2  stride:8.0
+DEBUG:Graph Compiler:MS: buf:3, tensor.dtype.bytes:2.0,array_size:55
+DEBUG:Graph Compiler:MS:array_size:55
+DEBUG:Graph Compiler:MS: Mem Access Loops, NumLoop: 1 ,array_size: 55
+DEBUG:Graph Compiler:MS: it:1
+DEBUG:Graph Compiler:MS: it:7
+DEBUG:Graph Compiler:MS: buf:0,it:7,tile_shape:(1, 23, 15, 1),stride1
+DEBUG:Graph Compiler:MS: buf:1,it:7,tile_shape:(1, 9, 9, 2),stride0
+DEBUG:Graph Compiler:MS: buf:2,it:7,tile_shape:(2, 7, 7, 1),stride1
+DEBUG:Graph Compiler:MS: buf:3,it:7,tile_shape:(2,),stride0.0
+DEBUG:Graph Compiler:MS: it:7
+DEBUG:Graph Compiler:MS: buf:0,it:7,tile_shape:(1, 23, 15, 1),stride15
+DEBUG:Graph Compiler:MS: buf:1,it:7,tile_shape:(1, 9, 9, 2),stride0
+DEBUG:Graph Compiler:MS: buf:2,it:7,tile_shape:(2, 7, 7, 1),stride7
+DEBUG:Graph Compiler:MS: buf:3,it:7,tile_shape:(2,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 23, 15, 1),stride2
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 9, 9, 2),stride2
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(2, 7, 7, 1),stride0
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(2,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 23, 15, 1),stride30
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 9, 9, 2),stride18
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(2, 7, 7, 1),stride0
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(2,),stride0.0
+DEBUG:Graph Compiler:MS: it:2
+DEBUG:Graph Compiler:MS: buf:0,it:2,tile_shape:(1, 23, 15, 1),stride0
+DEBUG:Graph Compiler:MS: buf:1,it:2,tile_shape:(1, 9, 9, 2),stride1.0
+DEBUG:Graph Compiler:MS: buf:2,it:2,tile_shape:(2, 7, 7, 1),stride49
+DEBUG:Graph Compiler:MS: buf:3,it:2,tile_shape:(2,),stride1.0
+DEBUG:Graph Compiler:MS: it:1
+DEBUG:Graph Compiler:MS: Before PU operation. Num Inner Loop : 5 ,array_size: 85
+DEBUG:Graph Compiler:MS: Last Instrn: 2147483648, Size: 177
+DEBUG:Graph Compiler:##################################################
+DEBUG:Graph Compiler:##################################################
+DEBUG:Graph Compiler:Compiling macro op: res2a_branch1/Convolution+res2a_branch1/TypeCastOp
+DEBUG:Graph Compiler:	Convolution op: res2a_branch1/Convolution
+DEBUG:Graph Compiler:	Other ops:
+DEBUG:Graph Compiler:		res2a_branch1/TypeCastOp
+DEBUG:Graph Compiler:Optimizing tiling for Convolution layer res2a_branch1/Convolution
+DEBUG:Graph Compiler:MS : In optimize_tiling Fn
+DEBUG:Graph Compiler:MS : KernelSize(K): 3 , OutputSize(O) : 56 , OutputStride: 1
+DEBUG:Graph Compiler:MS : IC: 64 , OC: 64 , B: 1
+MS: b: 1, ic: 1, oc: 2, oh: 9, ow: 9, kh: 7,kw:7
+MS: Store Instrn. Stride:72.0
+MS: Store Instrn. Stride:4608.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:16560.0
+MS: Store Instrn. Stride:520704.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:3136.0
+MS: Store Instrn. Stride:16.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f546ecd9ba8>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f546ecd9d30>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f546ecd9b70>
+MS. In pu_compile. Alloc size: conv1/MaxPooling[1,56,56,64] (FXP16 (8,8))
+MS. Before t_out_addr: 0x26ea000, len:4,pad_offset:3776.0
+MS. FInal t_out_addr: 0x26ebd80, pad_offset:7552
+OBUF.pop                  ->   R0
+R0         >>  #(12)      ->   R0
+R0         *   #(0)       ->   R1
+R1         >>  #(16)      ->   R1
+R0         max R1         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(12)      ->   R1
+R1         *   #(0)       ->   R2
+R2         >>  #(16)      ->   R2
+R1         max R2         ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(12)      ->   R1
+R1         *   #(0)       ->   R2
+R2         >>  #(16)      ->   R2
+R1         max R2         ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(12)      ->   R1
+R1         *   #(0)       ->   R2
+R2         >>  #(16)      ->   R2
+R1         max R2         ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(12)      ->   R1
+R1         *   #(0)       ->   R2
+R2         >>  #(16)      ->   R2
+R1         max R2         ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(12)      ->   R1
+R1         *   #(0)       ->   R2
+R2         >>  #(16)      ->   R2
+R1         max R2         ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(12)      ->   R1
+R1         *   #(0)       ->   R2
+R2         >>  #(16)      ->   R2
+R1         max R2         ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(12)      ->   R1
+R1         *   #(0)       ->   R2
+R2         >>  #(16)      ->   R2
+R1         max R2         ->   R1
+R1         max R0         ->   R0
+OBUF.pop                  ->   R1
+R1         >>  #(12)      ->   R1
+R1         *   #(0)       ->   R2
+R2         >>  #(16)      ->   R2
+R1         max R2         ->   R1
+R1         max R0         -> ST-DDR.push
+DEBUG:Graph Compiler:MS : tiling: {'B/b': (1, 1), 'OW/ow': (7, 8), 'OH/oh': (7, 8), 'IC/ic': (16, 4), 'OC/oc': (2, 32)} , order: ('IC/ic', 'B/b', 'OW/ow', 'OH/oh', 'OC/oc') 
+DEBUG:Graph Compiler:Optimal tiling and ordering:
+DEBUG:Graph Compiler:==Loop:  IC/ic, Tile: (16, 4)
+DEBUG:Graph Compiler:====Loop:    B/b, Tile: (1, 1)
+DEBUG:Graph Compiler:======Loop:  OW/ow, Tile: (7, 8)
+DEBUG:Graph Compiler:========Loop:  OH/oh, Tile: (7, 8)
+DEBUG:Graph Compiler:==========Loop:  OC/oc, Tile: (2, 32)
+DEBUG:Graph Compiler:============Loop:  KH/kh, Tile: (1, 3)
+DEBUG:Graph Compiler:==============Loop:  KW/kw, Tile: (1, 3)
+DEBUG:Graph Compiler:Allocating tensors for macro op: res2a_branch1/Convolution+res2a_branch1/TypeCastOp
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:inputs/data, t:inputs/data[1,224,224,3] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/weights, t:conv1/weights[64,7,7,3] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/biases, t:conv1/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/Convolution, t:conv1/Convolution[1,112,112,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/TypeCastOp, t:conv1/TypeCastOp[1,112,112,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/alpha, t:conv1/alpha[1] (FP32)
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/LeakyReLU, t:conv1/LeakyReLU[1,112,112,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/MaxPooling, t:conv1/MaxPooling[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/weights, t:res2a_branch1/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/biases, t:res2a_branch1/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/Convolution, t:res2a_branch1/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/TypeCastOp, t:res2a_branch1/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/weights, t:res2a_branch2a/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/biases, t:res2a_branch2a/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/Convolution, t:res2a_branch2a/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/TypeCastOp, t:res2a_branch2a/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/alpha, t:res2a_branch2a/alpha[1] (FP32)
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/LeakyReLU, t:res2a_branch2a/LeakyReLU[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/weights, t:res2a_branch2b/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/biases, t:res2a_branch2b/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/Convolution, t:res2a_branch2b/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/TypeCastOp, t:res2a_branch2b/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _conv_compile function
+DEBUG:Graph Compiler:MS : array: 4x4, last" False 
+DEBUG:Graph Compiler:Convolution op: res2a_branch1/Convolution
+DEBUG:Graph Compiler:PU Op: res2a_branch1/TypeCastOp
+DEBUG:Graph Compiler:MS : Pool_pad_h_t: 0, pool_pad_h_b: 0
+DEBUG:Graph Compiler:MS : Pool_pad_w_l: 0, pool_pad_w_r: 0
+DEBUG:Graph Compiler:MS : Pool_pad_h: 0,pool_pad_w: 0
+INFO:Graph Compiler:MS : In Layer :res2a_branch1/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x26ea000 	 Weights : 0x288f000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x28d7000 	 Outputs : 0x28d8000
+DEBUG:Graph Compiler:MS:  BaseAddress  array_size: 9, value: 2434793492
+DEBUG:Graph Compiler:MS : IC/ic: (16, 1), OC/oc: (2, 8) 
+DEBUG:Graph Compiler:MS:Before o/p loop processing, array_size:9
+DEBUG:Graph Compiler:MS: Tiling Item, l:IC/ic
+DEBUG:Graph Compiler:MS: Tiling Item, it:(16, 1)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(3, 1),stride:8.0,tensor.op:<dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f546ecd9b70>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(0, 0),stride:0.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ecd9fd0>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(3, 1),stride:32.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:B/b
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 1)
+DEBUG:Graph Compiler:MS: Tiling Item, l:OW/ow
+DEBUG:Graph Compiler:MS: Tiling Item, it:(7, 8)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(2, 8),stride:1024.0,tensor.op:<dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f546ecd9b70>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(2, 8),stride:4096.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ecd9fd0>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:OH/oh
+DEBUG:Graph Compiler:MS: Tiling Item, it:(7, 8)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(1, 8),stride:59392.0,tensor.op:<dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f546ecd9b70>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(1, 8),stride:229376.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ecd9fd0>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:OC/oc
+DEBUG:Graph Compiler:MS: Tiling Item, it:(2, 8)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(0, 0),stride:0.0,tensor.op:<dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f546ecd9b70>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(3, 8),stride:256.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ecd9fd0>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 8),stride:36864.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 8),stride:64.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:KH/kh
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 3)
+DEBUG:Graph Compiler:MS: Tiling Item, l:KW/kw
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 3)
+DEBUG:Graph Compiler:MS: (oh,ow):(8,8) conv_op_stride: (1, 1, 1, 1), (ih,iw): (10,10)
+DEBUG:Graph Compiler:MS: Shape: (1, 58, 58, 16, 4), tile shape: (1, 10, 10, 1),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 1
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:36
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 10
+DEBUG:Graph Compiler:MS: Buf: 0 ,s:10  stride:128.0
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:38
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 10
+DEBUG:Graph Compiler:MS: Buf: 0 ,s:10  stride:7424.0
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:40
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 1
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:40
+DEBUG:Graph Compiler:MS:array_size:40
+DEBUG:Graph Compiler:MS: Shape: (1, 56, 56, 16, 4), tile shape: (1, 8, 8, 8),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:8  stride:32.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:45
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:8  stride:512.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:48
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:8  stride:28672.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:51
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 1
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:51
+DEBUG:Graph Compiler:MS:array_size:51
+DEBUG:Graph Compiler:MS: Shape: (16, 3, 3, 16, 4, 4), tile shape: (8, 3, 3, 1),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 1
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:52
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 3
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:3  stride:512.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:54
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 3
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:3  stride:1536.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:56
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:8  stride:4608.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:58
+DEBUG:Graph Compiler:MS:array_size:58
+DEBUG:Graph Compiler:MS: Shape: (16, 4), tile shape: (8,),range:range(0, 1) 
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 3 ,s:8  stride:8.0
+DEBUG:Graph Compiler:MS: buf:3, tensor.dtype.bytes:2.0,array_size:61
+DEBUG:Graph Compiler:MS:array_size:61
+DEBUG:Graph Compiler:MS: Mem Access Loops, NumLoop: 1 ,array_size: 61
+DEBUG:Graph Compiler:MS: it:1
+DEBUG:Graph Compiler:MS: it:3
+DEBUG:Graph Compiler:MS: buf:0,it:3,tile_shape:(1, 10, 10, 1),stride1
+DEBUG:Graph Compiler:MS: buf:1,it:3,tile_shape:(1, 8, 8, 8),stride0
+DEBUG:Graph Compiler:MS: buf:2,it:3,tile_shape:(8, 3, 3, 1),stride1
+DEBUG:Graph Compiler:MS: buf:3,it:3,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:3
+DEBUG:Graph Compiler:MS: buf:0,it:3,tile_shape:(1, 10, 10, 1),stride10
+DEBUG:Graph Compiler:MS: buf:1,it:3,tile_shape:(1, 8, 8, 8),stride0
+DEBUG:Graph Compiler:MS: buf:2,it:3,tile_shape:(8, 3, 3, 1),stride3
+DEBUG:Graph Compiler:MS: buf:3,it:3,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 10, 10, 1),stride1
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 8, 8, 8),stride8
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(8, 3, 3, 1),stride0
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 10, 10, 1),stride10
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 8, 8, 8),stride64
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(8, 3, 3, 1),stride0
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 10, 10, 1),stride0
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 8, 8, 8),stride1.0
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(8, 3, 3, 1),stride9
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(8,),stride1.0
+DEBUG:Graph Compiler:MS: it:1
+DEBUG:Graph Compiler:MS: Before PU operation. Num Inner Loop : 5 ,array_size: 91
+DEBUG:Graph Compiler:MS: Last Instrn: 2147483648, Size: 134
+DEBUG:Graph Compiler:##################################################
+DEBUG:Graph Compiler:##################################################
+DEBUG:Graph Compiler:Compiling macro op: res2a_branch2a/Convolution+res2a_branch2a/TypeCastOp+res2a_branch2a/LeakyReLU
+DEBUG:Graph Compiler:	Convolution op: res2a_branch2a/Convolution
+DEBUG:Graph Compiler:	Other ops:
+DEBUG:Graph Compiler:		res2a_branch2a/TypeCastOp
+DEBUG:Graph Compiler:		res2a_branch2a/LeakyReLU
+DEBUG:Graph Compiler:Optimizing tiling for Convolution layer res2a_branch2a/Convolution
+DEBUG:Graph Compiler:MS : In optimize_tiling Fn
+DEBUG:Graph Compiler:MS : KernelSize(K): 3 , OutputSize(O) : 56 , OutputStride: 1
+DEBUG:Graph Compiler:MS : IC: 64 , OC: 64 , B: 1
+MS: b: 1, ic: 1, oc: 8, oh: 8, ow: 8, kh: 3,kw:3
+MS: Store Instrn. Stride:8.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:1024.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:59392.0
+MS: Store Instrn. Stride:229376.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:256.0
+MS: Store Instrn. Stride:36864.0
+MS: Store Instrn. Stride:64.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f546ece6128>
+MS. In pu_compile. Alloc size: res2a_branch1/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+MS. Before t_out_addr: 0x2ef8000, len:4,pad_offset:0.0
+MS. FInal t_out_addr: 0x2ef8000, pad_offset:0
+OBUF.pop                  ->   R0
+R0         >>  #(12)      ->   R0
+R0                        -> ST-DDR.push
+DEBUG:Graph Compiler:MS : tiling: {'B/b': (1, 1), 'OW/ow': (7, 8), 'OH/oh': (7, 8), 'IC/ic': (16, 4), 'OC/oc': (2, 32)} , order: ('IC/ic', 'B/b', 'OW/ow', 'OH/oh', 'OC/oc') 
+DEBUG:Graph Compiler:Optimal tiling and ordering:
+DEBUG:Graph Compiler:==Loop:  IC/ic, Tile: (16, 4)
+DEBUG:Graph Compiler:====Loop:    B/b, Tile: (1, 1)
+DEBUG:Graph Compiler:======Loop:  OW/ow, Tile: (7, 8)
+DEBUG:Graph Compiler:========Loop:  OH/oh, Tile: (7, 8)
+DEBUG:Graph Compiler:==========Loop:  OC/oc, Tile: (2, 32)
+DEBUG:Graph Compiler:============Loop:  KH/kh, Tile: (1, 3)
+DEBUG:Graph Compiler:==============Loop:  KW/kw, Tile: (1, 3)
+DEBUG:Graph Compiler:Allocating tensors for macro op: res2a_branch2a/Convolution+res2a_branch2a/TypeCastOp+res2a_branch2a/LeakyReLU
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:inputs/data, t:inputs/data[1,224,224,3] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/weights, t:conv1/weights[64,7,7,3] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/biases, t:conv1/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/Convolution, t:conv1/Convolution[1,112,112,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/TypeCastOp, t:conv1/TypeCastOp[1,112,112,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/alpha, t:conv1/alpha[1] (FP32)
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/LeakyReLU, t:conv1/LeakyReLU[1,112,112,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/MaxPooling, t:conv1/MaxPooling[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/weights, t:res2a_branch1/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/biases, t:res2a_branch1/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/Convolution, t:res2a_branch1/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/TypeCastOp, t:res2a_branch1/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/weights, t:res2a_branch2a/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/biases, t:res2a_branch2a/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/Convolution, t:res2a_branch2a/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/TypeCastOp, t:res2a_branch2a/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/alpha, t:res2a_branch2a/alpha[1] (FP32)
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/LeakyReLU, t:res2a_branch2a/LeakyReLU[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/weights, t:res2a_branch2b/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/biases, t:res2a_branch2b/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/Convolution, t:res2a_branch2b/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/TypeCastOp, t:res2a_branch2b/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _conv_compile function
+DEBUG:Graph Compiler:MS : array: 4x4, last" False 
+DEBUG:Graph Compiler:Convolution op: res2a_branch2a/Convolution
+DEBUG:Graph Compiler:PU Op: res2a_branch2a/TypeCastOp
+DEBUG:Graph Compiler:PU Op: res2a_branch2a/LeakyReLU
+DEBUG:Graph Compiler:MS : Pool_pad_h_t: 0, pool_pad_h_b: 0
+DEBUG:Graph Compiler:MS : Pool_pad_w_l: 0, pool_pad_w_r: 0
+DEBUG:Graph Compiler:MS : Pool_pad_h: 0,pool_pad_w: 0
+INFO:Graph Compiler:MS : In Layer :res2a_branch2a/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x26ea000 	 Weights : 0x3080000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x30c8000 	 Outputs : 0x30c9000
+DEBUG:Graph Compiler:MS:  BaseAddress  array_size: 9, value: 2434793496
+DEBUG:Graph Compiler:MS : IC/ic: (16, 1), OC/oc: (2, 8) 
+DEBUG:Graph Compiler:MS:Before o/p loop processing, array_size:9
+DEBUG:Graph Compiler:MS: Tiling Item, l:IC/ic
+DEBUG:Graph Compiler:MS: Tiling Item, it:(16, 1)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(3, 1),stride:8.0,tensor.op:<dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f546ecd9b70>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(0, 0),stride:0.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece63c8>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(3, 1),stride:32.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:B/b
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 1)
+DEBUG:Graph Compiler:MS: Tiling Item, l:OW/ow
+DEBUG:Graph Compiler:MS: Tiling Item, it:(7, 8)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(2, 8),stride:1024.0,tensor.op:<dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f546ecd9b70>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(2, 8),stride:4096.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece63c8>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:OH/oh
+DEBUG:Graph Compiler:MS: Tiling Item, it:(7, 8)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(1, 8),stride:59392.0,tensor.op:<dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f546ecd9b70>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(1, 8),stride:229376.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece63c8>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:OC/oc
+DEBUG:Graph Compiler:MS: Tiling Item, it:(2, 8)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(0, 0),stride:0.0,tensor.op:<dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f546ecd9b70>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(3, 8),stride:256.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece63c8>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 8),stride:36864.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 8),stride:64.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:KH/kh
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 3)
+DEBUG:Graph Compiler:MS: Tiling Item, l:KW/kw
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 3)
+DEBUG:Graph Compiler:MS: (oh,ow):(8,8) conv_op_stride: (1, 1, 1, 1), (ih,iw): (10,10)
+DEBUG:Graph Compiler:MS: Shape: (1, 58, 58, 16, 4), tile shape: (1, 10, 10, 1),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 1
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:36
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 10
+DEBUG:Graph Compiler:MS: Buf: 0 ,s:10  stride:128.0
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:38
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 10
+DEBUG:Graph Compiler:MS: Buf: 0 ,s:10  stride:7424.0
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:40
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 1
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:40
+DEBUG:Graph Compiler:MS:array_size:40
+DEBUG:Graph Compiler:MS: Shape: (1, 56, 56, 16, 4), tile shape: (1, 8, 8, 8),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:8  stride:32.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:45
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:8  stride:512.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:48
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:8  stride:28672.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:51
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 1
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:51
+DEBUG:Graph Compiler:MS:array_size:51
+DEBUG:Graph Compiler:MS: Shape: (16, 3, 3, 16, 4, 4), tile shape: (8, 3, 3, 1),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 1
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:52
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 3
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:3  stride:512.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:54
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 3
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:3  stride:1536.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:56
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:8  stride:4608.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:58
+DEBUG:Graph Compiler:MS:array_size:58
+DEBUG:Graph Compiler:MS: Shape: (16, 4), tile shape: (8,),range:range(0, 1) 
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 3 ,s:8  stride:8.0
+DEBUG:Graph Compiler:MS: buf:3, tensor.dtype.bytes:2.0,array_size:61
+DEBUG:Graph Compiler:MS:array_size:61
+DEBUG:Graph Compiler:MS: Mem Access Loops, NumLoop: 1 ,array_size: 61
+DEBUG:Graph Compiler:MS: it:1
+DEBUG:Graph Compiler:MS: it:3
+DEBUG:Graph Compiler:MS: buf:0,it:3,tile_shape:(1, 10, 10, 1),stride1
+DEBUG:Graph Compiler:MS: buf:1,it:3,tile_shape:(1, 8, 8, 8),stride0
+DEBUG:Graph Compiler:MS: buf:2,it:3,tile_shape:(8, 3, 3, 1),stride1
+DEBUG:Graph Compiler:MS: buf:3,it:3,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:3
+DEBUG:Graph Compiler:MS: buf:0,it:3,tile_shape:(1, 10, 10, 1),stride10
+DEBUG:Graph Compiler:MS: buf:1,it:3,tile_shape:(1, 8, 8, 8),stride0
+DEBUG:Graph Compiler:MS: buf:2,it:3,tile_shape:(8, 3, 3, 1),stride3
+DEBUG:Graph Compiler:MS: buf:3,it:3,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 10, 10, 1),stride1
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 8, 8, 8),stride8
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(8, 3, 3, 1),stride0
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 10, 10, 1),stride10
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 8, 8, 8),stride64
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(8, 3, 3, 1),stride0
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 10, 10, 1),stride0
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 8, 8, 8),stride1.0
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(8, 3, 3, 1),stride9
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(8,),stride1.0
+DEBUG:Graph Compiler:MS: it:1
+DEBUG:Graph Compiler:MS: Before PU operation. Num Inner Loop : 5 ,array_size: 91
+DEBUG:Graph Compiler:MS: Last Instrn: 2147483648, Size: 137
+DEBUG:Graph Compiler:##################################################
+DEBUG:Graph Compiler:##################################################
+DEBUG:Graph Compiler:Compiling macro op: res2a_branch2b/Convolution+res2a_branch2b/TypeCastOp
+DEBUG:Graph Compiler:	Convolution op: res2a_branch2b/Convolution
+DEBUG:Graph Compiler:	Other ops:
+DEBUG:Graph Compiler:		res2a_branch2b/TypeCastOp
+DEBUG:Graph Compiler:Optimizing tiling for Convolution layer res2a_branch2b/Convolution
+DEBUG:Graph Compiler:MS : In optimize_tiling Fn
+DEBUG:Graph Compiler:MS : KernelSize(K): 3 , OutputSize(O) : 56 , OutputStride: 1
+DEBUG:Graph Compiler:MS : IC: 64 , OC: 64 , B: 1
+MS: b: 1, ic: 1, oc: 8, oh: 8, ow: 8, kh: 3,kw:3
+MS: Store Instrn. Stride:8.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:1024.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:59392.0
+MS: Store Instrn. Stride:229376.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:256.0
+MS: Store Instrn. Stride:36864.0
+MS: Store Instrn. Stride:64.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f546ece64e0>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f546ece6668>
+MS. In pu_compile. Alloc size: res2a_branch2a/LeakyReLU[1,56,56,64] (FXP16 (8,8))
+MS. Before t_out_addr: 0x3872000, len:4,pad_offset:3776.0
+MS. FInal t_out_addr: 0x3873d80, pad_offset:7552
+OBUF.pop                  ->   R0
+R0         >>  #(12)      ->   R0
+R0         *   #(0)       ->   R1
+R1         >>  #(16)      ->   R1
+R0         max R1         ->   R0
+R0                        -> ST-DDR.push
+DEBUG:Graph Compiler:MS : tiling: {'B/b': (1, 1), 'OW/ow': (7, 8), 'OH/oh': (7, 8), 'IC/ic': (16, 4), 'OC/oc': (2, 32)} , order: ('IC/ic', 'B/b', 'OW/ow', 'OH/oh', 'OC/oc') 
+DEBUG:Graph Compiler:Optimal tiling and ordering:
+DEBUG:Graph Compiler:==Loop:  IC/ic, Tile: (16, 4)
+DEBUG:Graph Compiler:====Loop:    B/b, Tile: (1, 1)
+DEBUG:Graph Compiler:======Loop:  OW/ow, Tile: (7, 8)
+DEBUG:Graph Compiler:========Loop:  OH/oh, Tile: (7, 8)
+DEBUG:Graph Compiler:==========Loop:  OC/oc, Tile: (2, 32)
+DEBUG:Graph Compiler:============Loop:  KH/kh, Tile: (1, 3)
+DEBUG:Graph Compiler:==============Loop:  KW/kw, Tile: (1, 3)
+DEBUG:Graph Compiler:Allocating tensors for macro op: res2a_branch2b/Convolution+res2a_branch2b/TypeCastOp
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:inputs/data, t:inputs/data[1,224,224,3] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/weights, t:conv1/weights[64,7,7,3] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/biases, t:conv1/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/Convolution, t:conv1/Convolution[1,112,112,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/TypeCastOp, t:conv1/TypeCastOp[1,112,112,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/alpha, t:conv1/alpha[1] (FP32)
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/LeakyReLU, t:conv1/LeakyReLU[1,112,112,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:conv1/MaxPooling, t:conv1/MaxPooling[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/weights, t:res2a_branch1/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/biases, t:res2a_branch1/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/Convolution, t:res2a_branch1/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch1/TypeCastOp, t:res2a_branch1/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/weights, t:res2a_branch2a/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/biases, t:res2a_branch2a/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/Convolution, t:res2a_branch2a/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/TypeCastOp, t:res2a_branch2a/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/alpha, t:res2a_branch2a/alpha[1] (FP32)
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2a/LeakyReLU, t:res2a_branch2a/LeakyReLU[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/weights, t:res2a_branch2b/weights[64,3,3,64] (FXP16 (4,12))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/biases, t:res2a_branch2b/biases[64] (FXP16 (-4,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/Convolution, t:res2a_branch2b/Convolution[1,56,56,64] (FXP64 (44,20))
+DEBUG:Graph Compiler:MS : In _alloc_tensor fn. tname:res2a_branch2b/TypeCastOp, t:res2a_branch2b/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+DEBUG:Graph Compiler:MS : In _conv_compile function
+DEBUG:Graph Compiler:MS : array: 4x4, last" True 
+DEBUG:Graph Compiler:Convolution op: res2a_branch2b/Convolution
+DEBUG:Graph Compiler:PU Op: res2a_branch2b/TypeCastOp
+DEBUG:Graph Compiler:MS : Pool_pad_h_t: 0, pool_pad_h_b: 0
+DEBUG:Graph Compiler:MS : Pool_pad_w_l: 0, pool_pad_w_r: 0
+DEBUG:Graph Compiler:MS : Pool_pad_h: 0,pool_pad_w: 0
+INFO:Graph Compiler:MS : In Layer :res2a_branch2b/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x3872000 	 Weights : 0x3a17000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x3a5f000 	 Outputs : 0x3a60000
+DEBUG:Graph Compiler:MS:  BaseAddress  array_size: 9, value: 2434793501
+DEBUG:Graph Compiler:MS : IC/ic: (16, 1), OC/oc: (2, 8) 
+DEBUG:Graph Compiler:MS:Before o/p loop processing, array_size:9
+DEBUG:Graph Compiler:MS: Tiling Item, l:IC/ic
+DEBUG:Graph Compiler:MS: Tiling Item, it:(16, 1)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(3, 1),stride:8.0,tensor.op:<dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f546ece6668>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(0, 0),stride:0.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece6898>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(3, 1),stride:32.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:B/b
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 1)
+DEBUG:Graph Compiler:MS: Tiling Item, l:OW/ow
+DEBUG:Graph Compiler:MS: Tiling Item, it:(7, 8)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(2, 8),stride:1024.0,tensor.op:<dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f546ece6668>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(2, 8),stride:4096.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece6898>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:OH/oh
+DEBUG:Graph Compiler:MS: Tiling Item, it:(7, 8)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(1, 8),stride:59392.0,tensor.op:<dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f546ece6668>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(1, 8),stride:229376.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece6898>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 0),stride:0.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:OC/oc
+DEBUG:Graph Compiler:MS: Tiling Item, it:(2, 8)
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:0,s:(0, 0),stride:0.0,tensor.op:<dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f546ece6668>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:1,s:(3, 8),stride:256.0,tensor.op:<dnnweaver2.tensorOps.cnn.Convolution object at 0x7f546ece6898>
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:2,s:(0, 8),stride:36864.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Outerloppstrides Item, buf:3,s:(0, 8),stride:64.0,tensor.op:None
+DEBUG:Graph Compiler:MS: Tiling Item, l:KH/kh
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 3)
+DEBUG:Graph Compiler:MS: Tiling Item, l:KW/kw
+DEBUG:Graph Compiler:MS: Tiling Item, it:(1, 3)
+DEBUG:Graph Compiler:MS: (oh,ow):(8,8) conv_op_stride: (1, 1, 1, 1), (ih,iw): (10,10)
+DEBUG:Graph Compiler:MS: Shape: (1, 58, 58, 16, 4), tile shape: (1, 10, 10, 1),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 1
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:36
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 10
+DEBUG:Graph Compiler:MS: Buf: 0 ,s:10  stride:128.0
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:38
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 10
+DEBUG:Graph Compiler:MS: Buf: 0 ,s:10  stride:7424.0
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:40
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 1
+DEBUG:Graph Compiler:MS: buf:0, tensor.dtype.bytes:2.0,array_size:40
+DEBUG:Graph Compiler:MS:array_size:40
+DEBUG:Graph Compiler:MS: Shape: (1, 56, 56, 16, 4), tile shape: (1, 8, 8, 8),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:8  stride:32.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:45
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:8  stride:512.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:48
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 1 ,s:8  stride:28672.0
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:51
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 1
+DEBUG:Graph Compiler:MS: buf:1, tensor.dtype.bytes:8.0,array_size:51
+DEBUG:Graph Compiler:MS:array_size:51
+DEBUG:Graph Compiler:MS: Shape: (16, 3, 3, 16, 4, 4), tile shape: (8, 3, 3, 1),range:range(0, 4) 
+DEBUG:Graph Compiler:MS: dim: 3 ,s: 1
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:52
+DEBUG:Graph Compiler:MS: dim: 2 ,s: 3
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:3  stride:512.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:54
+DEBUG:Graph Compiler:MS: dim: 1 ,s: 3
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:3  stride:1536.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:56
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 2 ,s:8  stride:4608.0
+DEBUG:Graph Compiler:MS: buf:2, tensor.dtype.bytes:2.0,array_size:58
+DEBUG:Graph Compiler:MS:array_size:58
+DEBUG:Graph Compiler:MS: Shape: (16, 4), tile shape: (8,),range:range(0, 1) 
+DEBUG:Graph Compiler:MS: dim: 0 ,s: 8
+DEBUG:Graph Compiler:MS: Buf: 3 ,s:8  stride:8.0
+DEBUG:Graph Compiler:MS: buf:3, tensor.dtype.bytes:2.0,array_size:61
+DEBUG:Graph Compiler:MS:array_size:61
+DEBUG:Graph Compiler:MS: Mem Access Loops, NumLoop: 1 ,array_size: 61
+DEBUG:Graph Compiler:MS: it:1
+DEBUG:Graph Compiler:MS: it:3
+DEBUG:Graph Compiler:MS: buf:0,it:3,tile_shape:(1, 10, 10, 1),stride1
+DEBUG:Graph Compiler:MS: buf:1,it:3,tile_shape:(1, 8, 8, 8),stride0
+DEBUG:Graph Compiler:MS: buf:2,it:3,tile_shape:(8, 3, 3, 1),stride1
+DEBUG:Graph Compiler:MS: buf:3,it:3,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:3
+DEBUG:Graph Compiler:MS: buf:0,it:3,tile_shape:(1, 10, 10, 1),stride10
+DEBUG:Graph Compiler:MS: buf:1,it:3,tile_shape:(1, 8, 8, 8),stride0
+DEBUG:Graph Compiler:MS: buf:2,it:3,tile_shape:(8, 3, 3, 1),stride3
+DEBUG:Graph Compiler:MS: buf:3,it:3,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 10, 10, 1),stride1
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 8, 8, 8),stride8
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(8, 3, 3, 1),stride0
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 10, 10, 1),stride10
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 8, 8, 8),stride64
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(8, 3, 3, 1),stride0
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(8,),stride0.0
+DEBUG:Graph Compiler:MS: it:8
+DEBUG:Graph Compiler:MS: buf:0,it:8,tile_shape:(1, 10, 10, 1),stride0
+DEBUG:Graph Compiler:MS: buf:1,it:8,tile_shape:(1, 8, 8, 8),stride1.0
+DEBUG:Graph Compiler:MS: buf:2,it:8,tile_shape:(8, 3, 3, 1),stride9
+DEBUG:Graph Compiler:MS: buf:3,it:8,tile_shape:(8,),stride1.0
+DEBUG:Graph Compiler:MS: it:1
+DEBUG:Graph Compiler:MS: Before PU operation. Num Inner Loop : 5 ,array_size: 91
+DEBUG:Graph Compiler:MS: Last Instrn: 2147483649, Size: 134
+DEBUG:Graph Compiler:##################################################
+DEBUG:Graph Compiler:Compiling macro ops - done!
+DEBUG:Graph Compiler:MS:  op_name: <dnnweaver2.compiler.MacroNode object at 0x7f546ece6c50>
+DEBUG:Graph Compiler:MS:  op_name: <dnnweaver2.compiler.MacroNode object at 0x7f546ece6c88>
+DEBUG:Graph Compiler:MS:  op_name: <dnnweaver2.compiler.MacroNode object at 0x7f546ece6cc0>
+DEBUG:Graph Compiler:MS:  op_name: <dnnweaver2.compiler.MacroNode object at 0x7f546ece6cf8>
+DEBUG:Graph Compiler:MS: size of instr : 582
+MS: b: 1, ic: 1, oc: 8, oh: 8, ow: 8, kh: 3,kw:3
+MS: Store Instrn. Stride:8.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:1024.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:59392.0
+MS: Store Instrn. Stride:229376.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:256.0
+MS: Store Instrn. Stride:36864.0
+MS: Store Instrn. Stride:64.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f546ece69b0>
+MS. In pu_compile. Alloc size: res2a_branch2b/TypeCastOp[1,56,56,64] (FXP16 (8,8))
+MS. Before t_out_addr: 0x4080000, len:4,pad_offset:0.0
+MS. FInal t_out_addr: 0x4080000, pad_offset:0
+OBUF.pop                  ->   R0
+R0         >>  #(12)      ->   R0
+R0                        -> ST-DDR.push
+Number of instructions: 582
+[   75497472 -1879048192 -1843798016 -1826918400 -1860468736 -1876951040
+ -1843396608 -1826619392 -1860173824  1913651213  1611661384  1628443136
+  1630540288  1645215744  1661992960  1913651213  1611677872  1360003079
+  1628500480  1362100231  1630597632  1645215744  1661992960  1913651207
+  1611661312  1628438592  1630535744  1645218880  1661992976   270598145
+  1881210894  1610678280  1881210902  1610680112   291635201   560070657
+  1883373569  1627521056  1629618208  1883373576  1627521536  1629618688
+  1883373576  1627578880  1629676032   304283649  1885536262  1644363808
+  1885536262  1644364000  1885536257  1644365344   321126401  1887698945
+  1661206536  1879048198  1614807041  1631584256  1633681408  1648361473
+  1665138688  1879048198  1614807055  1631584256  1633681408  1648361479
+  1665138688  1879048199  1614807042  1631584258  1633681410  1648361472
+  1665138688  1879048199  1614807070  1631584274  1633681426  1648361472
+  1665138688  1879048193  1614807040  1631584257  1633681409  1648361521
+  1665138689 -1610612647 -1879048192 -1861312512 -1860173805  1879048194
+  1610612738  1879048194  1610612754  1879048195  1610612740  1879048195
+  1610612772  1879048193  1610612737  1879048192  1610612898  1889861645
+  1704985088  1723858944  1742733312  1889861645  1705014272  1723858944
+  1742733312  1889861639  1704984592  1723858944  1742733312  1881210883
+  1629487120  1881210883  1629488032  1881210881  1629487105  1881210880
+  1361051648  1629540928 -1342177152  -822080512  -889192447  -822079471
+ -1258290944 -1342177151  -822080495  -889192430  -822079454 -1258290671
+ -1258291184 -1342177151  -822080495  -889192430  -822079454 -1258290671
+ -1258291184 -1342177151  -822080495  -889192430  -822079454 -1258290671
+ -1258291184 -1342177151  -822080495  -889192430  -822079454 -1258290671
+ -1258291184 -1342177151  -822080495  -889192430  -822079454 -1258290671
+ -1258291184 -1342177151  -822080495  -889192430  -822079454 -1258290671
+ -1258291184 -1342177151  -822080495  -889192430  -822079454 -1258290671
+ -1258291184 -1342177151  -822080495  -889192430  -822079454 -1258290671
+ -1258291176 -2147483617 -2147483648    75497472 -1878089728 -1844908032
+ -1827835904 -1861386240 -1876951021 -1843396588 -1826619372 -1860173804
+  1913651215  1611661320  1628438528  1630535680  1645215776  1661992960
+  1913651206  1611662336  1628442624  1630539776  1645215744  1661992960
+  1913651206  1611720704  1360003075  1628471296  1362100227  1630568448
+  1645215744  1661992960  1913651201  1611661312  1628438784  1630535936
+  1645252608  1661993024   270598145  1881210889  1610678400  1881210889
+  1610685696   291635201   560070657  1883373575  1627521056  1629618208
+  1883373575  1627521536  1629618688  1883373575  1627549696  1629646848
+   304283649  1885536258  1644364288  1885536258  1644365312  1885536263
+  1644368384   321126401  1887698951  1661206536  1879048194  1614807041
+  1631584256  1633681408  1648361473  1665138688  1879048194  1614807050
+  1631584256  1633681408  1648361475  1665138688  1879048199  1614807041
+  1631584264  1633681416  1648361472  1665138688  1879048199  1614807050
+  1631584320  1633681472  1648361472  1665138688  1879048199  1614807040
+  1631584257  1633681409  1648361481  1665138689 -1610612696 -1879048192
+ -1861255168 -1860173801  1879048192  1610612744  1879048192  1610612800
+  1879048199  1610612744  1879048199  1610612800  1879048199  1610612737
+  1879048192  1610613248  1889861638  1704985600  1723858944  1742733312
+  1889861638  1436549120  1705041920  1723858944  1742733312  1889861633
+  1704984640  1723858944  1742733312  1881210887  1629487120  1881210887
+  1629488000  1881210887  1629487105  1881210880  1361051648  1629537280
+ -1342177152  -822080512 -1342177272 -2147483137 -2147483648    75497472
+ -1878089728 -1844969472 -1827897344 -1861447680 -1876951021 -1843396584
+ -1826619368 -1860173800  1913651215  1611661320  1628438528  1630535680
+  1645215776  1661992960  1913651206  1611662336  1628442624  1630539776
+  1645215744  1661992960  1913651206  1611720704  1360003075  1628471296
+  1362100227  1630568448  1645215744  1661992960  1913651201  1611661312
+  1628438784  1630535936  1645252608  1661993024   270598145  1881210889
+  1610678400  1881210889  1610685696   291635201   560070657  1883373575
+  1627521056  1629618208  1883373575  1627521536  1629618688  1883373575
+  1627549696  1629646848   304283649  1885536258  1644364288  1885536258
+  1644365312  1885536263  1644368384   321126401  1887698951  1661206536
+  1879048194  1614807041  1631584256  1633681408  1648361473  1665138688
+  1879048194  1614807050  1631584256  1633681408  1648361475  1665138688
+  1879048199  1614807041  1631584264  1633681416  1648361472  1665138688
+  1879048199  1614807050  1631584320  1633681472  1648361472  1665138688
+  1879048199  1614807040  1631584257  1633681409  1648361481  1665138689
+ -1610612693 -1879048192 -1861804032 -1860173796  1879048192  1610612744
+  1879048192  1610612800  1879048199  1610612744  1879048199  1610612800
+  1879048199  1610612737  1879048192  1610613248  1889861638  1704985600
+  1723858944  1742733312  1889861638  1436549120  1705043968  1723858944
+  1742733312  1889861633  1704984640  1723858944  1742733312  1881210887
+  1629487120  1881210887  1629488032  1881210887  1629487105  1881210880
+  1361051648  1629540928 -1342177152  -822080512  -889192447  -822079471
+ -1258290944 -1342177272 -2147483137 -2147483648    75497472 -1878581248
+ -1845399552 -1828327424 -1861877760 -1876951012 -1843396579 -1826619363
+ -1860173795  1913651215  1611661320  1628438528  1630535680  1645215776
+  1661992960  1913651206  1611662336  1628442624  1630539776  1645215744
+  1661992960  1913651206  1611720704  1360003075  1628471296  1362100227
+  1630568448  1645215744  1661992960  1913651201  1611661312  1628438784
+  1630535936  1645252608  1661993024   270598145  1881210889  1610678400
+  1881210889  1610685696   291635201   560070657  1883373575  1627521056
+  1629618208  1883373575  1627521536  1629618688  1883373575  1627549696
+  1629646848   304283649  1885536258  1644364288  1885536258  1644365312
+  1885536263  1644368384   321126401  1887698951  1661206536  1879048194
+  1614807041  1631584256  1633681408  1648361473  1665138688  1879048194
+  1614807050  1631584256  1633681408  1648361475  1665138688  1879048199
+  1614807041  1631584264  1633681416  1648361472  1665138688  1879048199
+  1614807050  1631584320  1633681472  1648361472  1665138688  1879048199
+  1614807040  1631584257  1633681409  1648361481  1665138689 -1610612696
+ -1879048192 -1861746688 -1860173792  1879048192  1610612744  1879048192
+  1610612800  1879048199  1610612744  1879048199  1610612800  1879048199
+  1610612737  1879048192  1610613248  1889861638  1704985600  1723858944
+  1742733312  1889861638  1436549120  1705041920  1723858944  1742733312
+  1889861633  1704984640  1723858944  1742733312  1881210887  1629487120
+  1881210887  1629488000  1881210887  1629487105  1881210880  1361051648
+  1629537280 -1342177152  -822080512 -1342177272 -2147483137 -2147483647]

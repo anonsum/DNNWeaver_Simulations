@@ -1,0 +1,12 @@
+##  to supress unsupported CPU AXA,FMV warning in tensorflow 
+export TF_CPP_MIN_LOG_LEVEL=2
+
+## Source CONDA settings 
+#source /local/workspace/tools/anaconda3/etc/profile.d/conda.sh
+export PATH=/local/workspace/tools/anaconda3/bin:$PATH
+## activate the python env for tensorflow 
+source activate tfpy36cpuenv			## activate tensorflw env  
+export PYTHONPATH=/local/workspace/ee207424/dnnweaver_v2/dnnweaver2-master
+export PYTHONPATH=/local/workspace/ee207424/dnnweaver_v2/dnnweaver2-master/example:$PYTHONPATH
+export PYTHONPATH=/local/workspace/ee207424/dnnweaver_v2/dnnweaver2-master/example/yolo_tf:$PYTHONPATH
+

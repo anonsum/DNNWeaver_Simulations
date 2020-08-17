@@ -1,0 +1,47 @@
+Compiling VVP ...
+ ... VVP file version 10.2 (stable)
+Compile cleanup...
+ ...     7194 functors (net_fun pool=524288 bytes)
+               3422 logic
+                  0 bufif
+                 11 resolv
+               1267 signals
+ ...     6864 filters (net_fil pool=1048576 bytes)
+ ...    24757 opcodes (614400 bytes)
+ ...     7604 nets
+ ...     7194 vvp_nets (1048544 bytes)
+ ...        0 arrays (0 words)
+ ...      135 memories
+                135 logic (42001161 words)
+                  0 real (0 words)
+ ...     1108 scopes
+ ... 1.31733 seconds, 710676.0/668884.0/2056.0 KBytes size/rss/shared
+Running ...
+ ...execute EndOfCompile callbacks
+ ...propagate initialization events
+ ...execute StartOfSim callbacks
+ ...run scheduler
+WARNING: ./rtl/mxv/instruction_memory_noPCI.v:219: $readmemh(instruction.bin): Not enough words in the file for the requested range [0:4096].
+VCD info: dumpfile tb_dnnw2_ctrl.vcd opened for output.
+FC2 Final Output
+r
+ddr_ram[00009800]=000000000000001d
+r
+ddr_ram[00009801]=000000000000001d
+r
+ddr_ram[00009802]=0000000000000000
+r
+ddr_ram[00009803]=0000000000000000
+r
+ ...execute Postsim callbacks
+ ... 61.014 seconds, 2348188.0/2306676.0/2084.0 KBytes size/rss/shared
+Event counts:
+       13187 time steps (pool=128)
+     4101080 thread schedule events
+     2595435 assign events
+             ...assign(vec4) pool=18724
+             ...assign(vec8) pool=204
+             ...assign(real) pool=256
+             ...assign(word) pool=128
+             ...assign(word/r) pool=204
+      172477 other events (pool=4096)

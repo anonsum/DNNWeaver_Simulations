@@ -1,0 +1,23 @@
+Caffemodel Weights File: ../prototxt/lenet/lenet_snapshot_20conv_50conv_500ip1_iter_10000.caffemodel
+Prototxt File: ../prototxt/lenet/lenet.prototxt
+Output File: board_data/BOARD_WT_Q9_7_20ch_50ch_500ip1.bin
+Bias to Use: ACT
+Output Format: HEX
+Data Prepared For: BOARD_BIN
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+Dumping Convolution Layer Data HEX Bias + Weight
+Total to dump in each chunk: 64  bytes
+Dumping Convolution Layer Data HEX Bias + Weight
+Total to dump in each chunk: 64  bytes
+IP Layer data
+Output channels: 500
+Neurons: 800
+Data sets: 63
+Bias.shape: (500,)
+IP Layer data
+Output channels: 10
+Neurons: 500
+Data sets: 2
+Bias.shape: (10,)

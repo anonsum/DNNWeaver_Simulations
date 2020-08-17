@@ -1,0 +1,80 @@
+Input file: ../images/mnist_images/0_img.bmp
+Output file: board_data/test_images/0_img.bin
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+<type 'numpy.ndarray'>
+Rows: 28
+Cols: 28
+Input file: ../images/mnist_images/1_img.bmp
+Output file: board_data/test_images/1_img.bin
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+<type 'numpy.ndarray'>
+Rows: 28
+Cols: 28
+Input file: ../images/mnist_images/2_img.bmp
+Output file: board_data/test_images/2_img.bin
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+<type 'numpy.ndarray'>
+Rows: 28
+Cols: 28
+Input file: ../images/mnist_images/3_img.bmp
+Output file: board_data/test_images/3_img.bin
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+<type 'numpy.ndarray'>
+Rows: 28
+Cols: 28
+Input file: ../images/mnist_images/4_img.bmp
+Output file: board_data/test_images/4_img.bin
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+<type 'numpy.ndarray'>
+Rows: 28
+Cols: 28
+Input file: ../images/mnist_images/5_img.bmp
+Output file: board_data/test_images/5_img.bin
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+<type 'numpy.ndarray'>
+Rows: 28
+Cols: 28
+Input file: ../images/mnist_images/6_img.bmp
+Output file: board_data/test_images/6_img.bin
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+<type 'numpy.ndarray'>
+Rows: 28
+Cols: 28
+Input file: ../images/mnist_images/7_img.bmp
+Output file: board_data/test_images/7_img.bin
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+<type 'numpy.ndarray'>
+Rows: 28
+Cols: 28
+Input file: ../images/mnist_images/8_img.bmp
+Output file: board_data/test_images/8_img.bin
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+<type 'numpy.ndarray'>
+Rows: 28
+Cols: 28
+Input file: ../images/mnist_images/9_img.bmp
+Output file: board_data/test_images/9_img.bin
+Qm.n: 9.7
+Q 9.7
+M: 9 , N: 7
+<type 'numpy.ndarray'>
+Rows: 28
+Cols: 28

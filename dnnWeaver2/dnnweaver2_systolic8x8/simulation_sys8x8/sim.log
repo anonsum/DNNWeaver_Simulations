@@ -1,0 +1,79 @@
+Compiling VVP ...
+ ... VVP file version 10.2 (stable)
+Compile cleanup...
+ ...     9326 functors (net_fun pool=524288 bytes)
+               4444 logic
+                  0 bufif
+                 13 resolv
+               1488 signals
+ ...     8925 filters (net_fil pool=1310720 bytes)
+ ...    27822 opcodes (688128 bytes)
+ ...    10201 nets
+ ...     9326 vvp_nets (1048544 bytes)
+ ...        0 arrays (0 words)
+ ...      167 memories
+                167 logic (42054581 words)
+                  0 real (0 words)
+ ...     1893 scopes
+ ... 0.186732 seconds, 713628.0/671824.0/2056.0 KBytes size/rss/shared
+Running ...
+ ...execute EndOfCompile callbacks
+ ...propagate initialization events
+ ...execute StartOfSim callbacks
+ ...run scheduler
+WARNING: ./rtl/mxv/instruction_memory_noPCI.v:219: $readmemh(instruction.bin): Not enough words in the file for the requested range [0:338].
+VCD info: dumpfile tb_dnnw2_ctrl.vcd opened for output.
+FC_1 Final Output
+r
+ddr_ram[0001a800]=000000000000077d
+r
+ddr_ram[0001a801]=000000000000078c
+r
+ddr_ram[0001a802]=000000000000079b
+r
+ddr_ram[0001a803]=00000000000007aa
+r
+ddr_ram[0001a804]=0000000000000000
+r
+ddr_ram[0001a805]=0000000000000000
+r
+ddr_ram[0001a806]=0000000000000000
+r
+ddr_ram[0001a807]=0000000000000000
+r
+ddr_ram[0001a808]=0000000000000000
+r
+ddr_ram[0001a809]=0000000000000000
+r
+ddr_ram[0001a80a]=0000000000000000
+r
+ddr_ram[0001a80b]=0000000000000000
+r
+ddr_ram[0001a80c]=0000000000000000
+r
+ddr_ram[0001a80d]=0000000000000000
+r
+ddr_ram[0001a80e]=0000000000000000
+r
+ddr_ram[0001a80f]=0000000000000000
+r
+ddr_ram[0001a810]=0000000000000000
+r
+ddr_ram[0001a811]=0000000000000000
+r
+ddr_ram[0001a812]=0000000000000000
+r
+ddr_ram[0001a813]=0000000000000000
+r
+ ...execute Postsim callbacks
+ ... 47.7649 seconds, 2351160.0/2310056.0/2452.0 KBytes size/rss/shared
+Event counts:
+       46571 time steps (pool=128)
+    17107272 thread schedule events
+    12589462 assign events
+             ...assign(vec4) pool=18724
+             ...assign(vec8) pool=204
+             ...assign(real) pool=256
+             ...assign(word) pool=128
+             ...assign(word/r) pool=204
+     1276707 other events (pool=4096)

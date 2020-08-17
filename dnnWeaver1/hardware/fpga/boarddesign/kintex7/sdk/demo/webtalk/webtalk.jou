@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# 
+# Start of session at: Fri Mar 15 14:50:13 2019
+# Process ID: 9484
+# Current directory: E:/jayakumar/FPGACNNProject/dnnWeaver1/hardware/fpga/boarddesign/kintex7/sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: E:/jayakumar/FPGACNNProject/dnnWeaver1/hardware/fpga/boarddesign/kintex7/sdk/webtalk/webtalk.log
+# Journal file: E:/jayakumar/FPGACNNProject/dnnWeaver1/hardware/fpga/boarddesign/kintex7/sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

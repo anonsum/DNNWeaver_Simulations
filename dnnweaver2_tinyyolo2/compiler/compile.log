@@ -1,0 +1,915 @@
+leakyReLU
+leakyReLU
+leakyReLU
+leakyReLU
+leakyReLU
+leakyReLU
+leakyReLU
+leakyReLU
+linear
+**************************************************
+List of ops (nodes) in the graph
+	Op name: conv0/Convolution
+	Op name: conv0/TypeCastOp
+	Op name: conv0/batch_norm/BatchNorm
+	Op name: conv0/batch_norm/TypeCastOp
+	Op name: conv0/leakyReLU/LeakyReLU
+	Op name: pool0/MaxPooling
+	Op name: conv1/Convolution
+	Op name: conv1/TypeCastOp
+	Op name: conv1/batch_norm/BatchNorm
+	Op name: conv1/batch_norm/TypeCastOp
+	Op name: conv1/leakyReLU/LeakyReLU
+	Op name: pool1/MaxPooling
+	Op name: conv2/Convolution
+	Op name: conv2/TypeCastOp
+	Op name: conv2/batch_norm/BatchNorm
+	Op name: conv2/batch_norm/TypeCastOp
+	Op name: conv2/leakyReLU/LeakyReLU
+	Op name: pool2/MaxPooling
+	Op name: conv3/Convolution
+	Op name: conv3/TypeCastOp
+	Op name: conv3/batch_norm/BatchNorm
+	Op name: conv3/batch_norm/TypeCastOp
+	Op name: conv3/leakyReLU/LeakyReLU
+	Op name: pool3/MaxPooling
+	Op name: conv4/Convolution
+	Op name: conv4/TypeCastOp
+	Op name: conv4/batch_norm/BatchNorm
+	Op name: conv4/batch_norm/TypeCastOp
+	Op name: conv4/leakyReLU/LeakyReLU
+	Op name: pool4/MaxPooling
+	Op name: conv5/Convolution
+	Op name: conv5/TypeCastOp
+	Op name: conv5/batch_norm/BatchNorm
+	Op name: conv5/batch_norm/TypeCastOp
+	Op name: conv5/leakyReLU/LeakyReLU
+	Op name: pool5/MaxPooling
+	Op name: conv6/Convolution
+	Op name: conv6/TypeCastOp
+	Op name: conv6/batch_norm/BatchNorm
+	Op name: conv6/batch_norm/TypeCastOp
+	Op name: conv6/leakyReLU/LeakyReLU
+	Op name: conv7/Convolution
+	Op name: conv7/TypeCastOp
+	Op name: conv7/batch_norm/BatchNorm
+	Op name: conv7/batch_norm/TypeCastOp
+	Op name: conv7/leakyReLU/LeakyReLU
+	Op name: conv8/Convolution
+	Op name: conv8/TypeCastOp
+**************************************************
+**************************************************
+List of tensors (edges) in the graph
+	inputs/data[1,416,416,3] (FXP16 (8,8))
+	conv0/weights[16,3,3,3] (FXP16 (2,14))
+	conv0/biases[16] (FXP32 (10,22))
+	conv0/Convolution[1,416,416,16] (FXP64 (42,22))
+	conv0/TypeCastOp[1,416,416,16] (FXP16 (4,12))
+	conv0/batch_norm/mean[16] (FXP16 (4,12))
+	conv0/batch_norm/scale[16] (FXP16 (7,9))
+	conv0/batch_norm/BatchNorm[1,416,416,16] (FXP32 (11,21))
+	conv0/batch_norm/TypeCastOp[1,416,416,16] (FXP16 (8,8))
+	conv0/leakyReLU/alpha[1] (FP32)
+	conv0/leakyReLU/LeakyReLU[1,416,416,16] (FXP16 (8,8))
+	pool0/MaxPooling[1,208,208,16] (FXP16 (8,8))
+	conv1/weights[32,3,3,16] (FXP16 (2,14))
+	conv1/biases[32] (FXP32 (10,22))
+	conv1/Convolution[1,208,208,32] (FXP64 (42,22))
+	conv1/TypeCastOp[1,208,208,32] (FXP16 (8,8))
+	conv1/batch_norm/mean[32] (FXP16 (8,8))
+	conv1/batch_norm/scale[32] (FXP16 (2,14))
+	conv1/batch_norm/BatchNorm[1,208,208,32] (FXP32 (10,22))
+	conv1/batch_norm/TypeCastOp[1,208,208,32] (FXP16 (8,8))
+	conv1/leakyReLU/alpha[1] (FP32)
+	conv1/leakyReLU/LeakyReLU[1,208,208,32] (FXP16 (8,8))
+	pool1/MaxPooling[1,104,104,32] (FXP16 (8,8))
+	conv2/weights[64,3,3,32] (FXP16 (2,14))
+	conv2/biases[64] (FXP32 (10,22))
+	conv2/Convolution[1,104,104,64] (FXP64 (42,22))
+	conv2/TypeCastOp[1,104,104,64] (FXP16 (6,10))
+	conv2/batch_norm/mean[64] (FXP16 (6,10))
+	conv2/batch_norm/scale[64] (FXP16 (3,13))
+	conv2/batch_norm/BatchNorm[1,104,104,64] (FXP32 (9,23))
+	conv2/batch_norm/TypeCastOp[1,104,104,64] (FXP16 (7,9))
+	conv2/leakyReLU/alpha[1] (FP32)
+	conv2/leakyReLU/LeakyReLU[1,104,104,64] (FXP16 (7,9))
+	pool2/MaxPooling[1,52,52,64] (FXP16 (7,9))
+	conv3/weights[128,3,3,64] (FXP16 (2,14))
+	conv3/biases[128] (FXP32 (9,23))
+	conv3/Convolution[1,52,52,128] (FXP64 (41,23))
+	conv3/TypeCastOp[1,52,52,128] (FXP16 (6,10))
+	conv3/batch_norm/mean[128] (FXP16 (6,10))
+	conv3/batch_norm/scale[128] (FXP16 (3,13))
+	conv3/batch_norm/BatchNorm[1,52,52,128] (FXP32 (9,23))
+	conv3/batch_norm/TypeCastOp[1,52,52,128] (FXP16 (6,10))
+	conv3/leakyReLU/alpha[1] (FP32)
+	conv3/leakyReLU/LeakyReLU[1,52,52,128] (FXP16 (6,10))
+	pool3/MaxPooling[1,26,26,128] (FXP16 (6,10))
+	conv4/weights[256,3,3,128] (FXP16 (2,14))
+	conv4/biases[256] (FXP32 (8,24))
+	conv4/Convolution[1,26,26,256] (FXP64 (40,24))
+	conv4/TypeCastOp[1,26,26,256] (FXP16 (5,11))
+	conv4/batch_norm/mean[256] (FXP16 (5,11))
+	conv4/batch_norm/scale[256] (FXP16 (3,13))
+	conv4/batch_norm/BatchNorm[1,26,26,256] (FXP32 (8,24))
+	conv4/batch_norm/TypeCastOp[1,26,26,256] (FXP16 (6,10))
+	conv4/leakyReLU/alpha[1] (FP32)
+	conv4/leakyReLU/LeakyReLU[1,26,26,256] (FXP16 (6,10))
+	pool4/MaxPooling[1,13,13,256] (FXP16 (6,10))
+	conv5/weights[512,3,3,256] (FXP16 (2,14))
+	conv5/biases[512] (FXP32 (8,24))
+	conv5/Convolution[1,13,13,512] (FXP64 (40,24))
+	conv5/TypeCastOp[1,13,13,512] (FXP16 (4,12))
+	conv5/batch_norm/mean[512] (FXP16 (4,12))
+	conv5/batch_norm/scale[512] (FXP16 (3,13))
+	conv5/batch_norm/BatchNorm[1,13,13,512] (FXP32 (7,25))
+	conv5/batch_norm/TypeCastOp[1,13,13,512] (FXP16 (5,11))
+	conv5/leakyReLU/alpha[1] (FP32)
+	conv5/leakyReLU/LeakyReLU[1,13,13,512] (FXP16 (5,11))
+	pool5/MaxPooling[1,13,13,512] (FXP16 (5,11))
+	conv6/weights[1024,3,3,512] (FXP16 (2,14))
+	conv6/biases[1024] (FXP32 (7,25))
+	conv6/Convolution[1,13,13,1024] (FXP64 (39,25))
+	conv6/TypeCastOp[1,13,13,1024] (FXP16 (4,12))
+	conv6/batch_norm/mean[1024] (FXP16 (4,12))
+	conv6/batch_norm/scale[1024] (FXP16 (5,11))
+	conv6/batch_norm/BatchNorm[1,13,13,1024] (FXP32 (9,23))
+	conv6/batch_norm/TypeCastOp[1,13,13,1024] (FXP16 (7,9))
+	conv6/leakyReLU/alpha[1] (FP32)
+	conv6/leakyReLU/LeakyReLU[1,13,13,1024] (FXP16 (7,9))
+	conv7/weights[1024,3,3,1024] (FXP16 (2,14))
+	conv7/biases[1024] (FXP32 (9,23))
+	conv7/Convolution[1,13,13,1024] (FXP64 (41,23))
+	conv7/TypeCastOp[1,13,13,1024] (FXP16 (5,11))
+	conv7/batch_norm/mean[1024] (FXP16 (5,11))
+	conv7/batch_norm/scale[1024] (FXP16 (2,14))
+	conv7/batch_norm/BatchNorm[1,13,13,1024] (FXP32 (7,25))
+	conv7/batch_norm/TypeCastOp[1,13,13,1024] (FXP16 (4,12))
+	conv7/leakyReLU/alpha[1] (FP32)
+	conv7/leakyReLU/LeakyReLU[1,13,13,1024] (FXP16 (4,12))
+	conv8/weights[125,1,1,1024] (FXP16 (2,14))
+	conv8/biases[125] (FXP32 (6,26))
+	conv8/Convolution[1,13,13,125] (FXP64 (38,26))
+	conv8/TypeCastOp[1,13,13,125] (FXP16 (5,11))
+**************************************************
+Accelerator object
+	Precision: 16
+	Systolic array size: 8 -rows x 8 -columns
+	IBUF size:   16,384.0 Bytes
+	WBUF size:   32,768.0 Bytes
+	OBUF size:   65,536.0 Bytes
+	BBUF size:   32,768.0 Bytes
+Double buffering enabled. Sizes of SRAM are halved
+MS :GraphCOmpile Done!!
+INFO:Graph Compiler:MS : In Layer :conv0/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x0 	 Weights : 0x2b5000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x2b7c00 	 Outputs : 0x2b8800 	 Elements : (1, 416, 416, 16)
+INFO:PU Compiler:SS : In Layer :conv0/batch_norm/BatchNorm
+INFO:PU Compiler:SS : Addr -- Mean : 0x1d83c00
+INFO:PU Compiler:SS : Addr -- Scale : 0x1d84800
+MS: b: 1, ic: 1, oc: 2, oh: 16, ow: 16, kh: 3,kw:3
+MS: Store Instrn. Stride:256.0
+MS: Store Instrn. Stride:2048.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:107008.0
+MS: Store Instrn. Stride:851968.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55784a5240>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f55784a56d8>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55784a57f0>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f55784a5940>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f55784a59b0>
+MS. In pu_compile. Alloc size: pool0/MaxPooling[1,208,208,16] (FXP16 (8,8))
+MS. Before t_out_addr: 0x32f6400, len:4,pad_offset:3376.0
+MS. FInal t_out_addr: 0x32f7e60, pad_offset:6752
+OBUF.pop                  ->   R0
+R0         >>  #(10)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(13)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(10)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(10)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(10)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv1/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x32f6400 	 Weights : 0x3459400
+INFO:Graph Compiler:MS : Addr -- Bias : 0x3462c00 	 Outputs : 0x3463800 	 Elements : (1, 208, 208, 32)
+INFO:PU Compiler:SS : In Layer :conv1/batch_norm/BatchNorm
+INFO:PU Compiler:SS : Addr -- Mean : 0x41fb000
+INFO:PU Compiler:SS : Addr -- Scale : 0x41fbc00
+MS: b: 1, ic: 1, oc: 2, oh: 16, ow: 16, kh: 3,kw:3
+MS: Store Instrn. Stride:16.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:128.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:512.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:107520.0
+MS: Store Instrn. Stride:851968.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:128.0
+MS: Store Instrn. Stride:4608.0
+MS: Store Instrn. Stride:64.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55784a5e10>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f55784fb0b8>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55784fb1d0>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f55784fb320>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f55784fb390>
+MS. In pu_compile. Alloc size: pool1/MaxPooling[1,104,104,32] (FXP16 (8,8))
+MS. Before t_out_addr: 0x4cddc00, len:4,pad_offset:3424.0
+MS. FInal t_out_addr: 0x4cdf6c0, pad_offset:6848
+OBUF.pop                  ->   R0
+R0         >>  #(14)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(14)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(14)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(14)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(14)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv2/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x4cddc00 	 Weights : 0x4d98000
+INFO:Graph Compiler:MS : Addr -- Bias : 0x4dbc800 	 Outputs : 0x4dbd400 	 Elements : (1, 104, 104, 64)
+INFO:PU Compiler:SS : In Layer :conv2/batch_norm/BatchNorm
+INFO:PU Compiler:SS : Addr -- Mean : 0x54bb800
+INFO:PU Compiler:SS : Addr -- Scale : 0x54bc400
+MS: b: 1, ic: 1, oc: 8, oh: 8, ow: 8, kh: 3,kw:3
+MS: Store Instrn. Stride:16.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:128.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:512.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:54272.0
+MS: Store Instrn. Stride:425984.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55784fb7f0>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f55784fba58>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55784fbb70>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f55784fbcc0>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f55784fbd30>
+MS. In pu_compile. Alloc size: pool2/MaxPooling[1,52,52,64] (FXP16 (7,9))
+MS. Before t_out_addr: 0x5a57000, len:4,pad_offset:3520.0
+MS. FInal t_out_addr: 0x5a58b80, pad_offset:7040
+OBUF.pop                  ->   R0
+R0         >>  #(12)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(14)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv3/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x5a57000 	 Weights : 0x5abd400
+INFO:Graph Compiler:MS : Addr -- Bias : 0x5b4dc00 	 Outputs : 0x5b4e800 	 Elements : (1, 52, 52, 128)
+INFO:PU Compiler:SS : In Layer :conv3/batch_norm/BatchNorm
+INFO:PU Compiler:SS : Addr -- Mean : 0x5f01000
+INFO:PU Compiler:SS : Addr -- Scale : 0x5f01c00
+MS: b: 1, ic: 8, oc: 1, oh: 4, ow: 4, kh: 3,kw:3
+MS: Store Instrn. Stride:512.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:27648.0
+MS: Store Instrn. Stride:212992.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:9216.0
+MS: Store Instrn. Stride:32.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55784fc1d0>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f55784fc438>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55784fc550>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f55784fc6a0>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f55784fc710>
+MS. In pu_compile. Alloc size: pool3/MaxPooling[1,26,26,128] (FXP16 (6,10))
+MS. Before t_out_addr: 0x61f9800, len:4,pad_offset:3712.0
+MS. FInal t_out_addr: 0x61fb500, pad_offset:7424
+OBUF.pop                  ->   R0
+R0         >>  #(13)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(13)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(13)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv4/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x61f9800 	 Weights : 0x6236400
+INFO:Graph Compiler:MS : Addr -- Bias : 0x6476c00 	 Outputs : 0x6477800 	 Elements : (1, 26, 26, 256)
+INFO:PU Compiler:SS : In Layer :conv4/batch_norm/BatchNorm
+INFO:PU Compiler:SS : Addr -- Mean : 0x6686400
+INFO:PU Compiler:SS : Addr -- Scale : 0x6687000
+MS: b: 1, ic: 8, oc: 1, oh: 2, ow: 2, kh: 3,kw:3
+MS: Store Instrn. Stride:512.0
+MS: Store Instrn. Stride:4096.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:14336.0
+MS: Store Instrn. Stride:106496.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:128.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:1024.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:18432.0
+MS: Store Instrn. Stride:32.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55784fcb70>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f55784fcdd8>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55784fcef0>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f5578503048>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f55785030f0>
+MS. In pu_compile. Alloc size: pool4/MaxPooling[1,13,13,256] (FXP16 (6,10))
+MS. Before t_out_addr: 0x682ec00, len:4,pad_offset:4096.0
+MS. FInal t_out_addr: 0x6830c00, pad_offset:8192
+OBUF.pop                  ->   R0
+R0         >>  #(13)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(14)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(13)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv5/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x682ec00 	 Weights : 0x6857c00
+INFO:Graph Compiler:MS : Addr -- Bias : 0x7158400 	 Outputs : 0x7159400 	 Elements : (1, 14, 14, 512)
+INFO:PU Compiler:SS : In Layer :conv5/batch_norm/BatchNorm
+INFO:PU Compiler:SS : Addr -- Mean : 0x72bb400
+INFO:PU Compiler:SS : Addr -- Scale : 0x72bc000
+MS: b: 1, ic: 2, oc: 2, oh: 14.0, ow: 14.0, kh: 3,kw:3
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:256.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:128.0
+MS: Store Instrn. Stride:73728.0
+MS: Store Instrn. Stride:64.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f5578503550>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f55785037b8>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55785038d0>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f5578503a20>
+operation is <dnnweaver2.tensorOps.cnn.MaxPooling object at 0x7f5578503a90>
+MS. In pu_compile. Alloc size: pool5/MaxPooling[1,13,13,512] (FXP16 (5,11))
+MS. Before t_out_addr: 0x73bf000, len:4,pad_offset:8192.0
+MS. FInal t_out_addr: 0x73c3000, pad_offset:16384
+OBUF.pop                  ->   R0
+R0         >>  #(12)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(14)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         ->   R0
+OBUF.pop                  ->   R3
+R3         >>  #(12)      ->   R3
+R3         -   R1         ->   R3
+R3         >>  #(0)       ->   R3
+R3         *   R2         ->   R3
+R3         >>  #(14)      ->   R3
+R3         *   #(6553)    ->   R4
+R4         >>  #(16)      ->   R4
+R3         max R4         ->   R3
+R3         max R0         -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv6/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x73bf000 	 Weights : 0x7410800
+INFO:Graph Compiler:MS : Addr -- Bias : 0x9811000 	 Outputs : 0x9812800 	 Elements : (1, 13, 13, 1024)
+INFO:PU Compiler:SS : In Layer :conv6/batch_norm/BatchNorm
+INFO:PU Compiler:SS : Addr -- Mean : 0x9a93800
+INFO:PU Compiler:SS : Addr -- Scale : 0x9a94800
+MS: b: 1, ic: 2, oc: 2, oh: 13.0, ow: 13.0, kh: 3,kw:3
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:256.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:128.0
+MS: Store Instrn. Stride:147456.0
+MS: Store Instrn. Stride:64.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f5578503ef0>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f5578504198>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f55785042b0>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f5578504400>
+MS. In pu_compile. Alloc size: conv6/leakyReLU/LeakyReLU[1,13,13,1024] (FXP16 (7,9))
+MS. Before t_out_addr: 0x9c17400, len:4,pad_offset:16384.0
+MS. FInal t_out_addr: 0x9c1f400, pad_offset:32768
+OBUF.pop                  ->   R0
+R0         >>  #(13)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(14)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+R0                        -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv7/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0x9c17400 	 Weights : 0x9cb9c00
+INFO:Graph Compiler:MS : Addr -- Bias : 0xe4ba400 	 Outputs : 0xe4bbc00 	 Elements : (1, 13, 13, 1024)
+INFO:PU Compiler:SS : In Layer :conv7/batch_norm/BatchNorm
+INFO:PU Compiler:SS : Addr -- Mean : 0xe73cc00
+INFO:PU Compiler:SS : Addr -- Scale : 0xe73dc00
+MS: b: 1, ic: 2, oc: 2, oh: 13.0, ow: 13.0, kh: 3,kw:3
+MS: Store Instrn. Stride:32.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:256.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:128.0
+MS: Store Instrn. Stride:294912.0
+MS: Store Instrn. Stride:64.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f5578504828>
+operation is <dnnweaver2.tensorOps.cnn.BatchNorm object at 0x7f5578504a90>
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f5578504ba8>
+operation is <dnnweaver2.tensorOps.cnn.LeakyReLU object at 0x7f5578504cf8>
+MS. In pu_compile. Alloc size: conv7/leakyReLU/LeakyReLU[1,13,13,1024] (FXP16 (4,12))
+MS. Before t_out_addr: 0xe8c0800, len:4,pad_offset:0.0
+MS. FInal t_out_addr: 0xe8c0800, pad_offset:0
+OBUF.pop                  ->   R0
+R0         >>  #(12)      ->   R0
+LD0.pop                   ->   R1
+LD1.pop                   ->   R2
+R0         -   R1         ->   R0
+R0         >>  #(0)       ->   R0
+R0         *   R2         ->   R0
+R0         >>  #(13)      ->   R0
+R0         *   #(6553)    ->   R3
+R3         >>  #(16)      ->   R3
+R0         max R3         ->   R0
+R0                        -> ST-DDR.push
+INFO:Graph Compiler:MS : In Layer :conv8/Convolution
+INFO:Graph Compiler:MS : Addr -- Data : 0xe8c0800 	 Weights : 0xe941000
+INFO:Graph Compiler:MS : Addr -- Bias : 0xed41800 	 Outputs : 0xed42400 	 Elements : (1, 13, 13, 128)
+MS: b: 1, ic: 128, oc: 1, oh: 1, ow: 1, kh: 1,kw:1
+MS: Store Instrn. Stride:2048.0
+MS: Store Instrn. Stride:1024.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:26624.0
+MS: Store Instrn. Stride:13312.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:0.0
+MS: Store Instrn. Stride:64.0
+MS: Store Instrn. Stride:16384.0
+MS: Store Instrn. Stride:32.0
+operation is <dnnweaver2.tensorOps.cnn.TypeCastOp object at 0x7f5578512080>
+MS. In pu_compile. Alloc size: conv8/TypeCastOp[1,13,13,125] (FXP16 (5,11))
+MS. Before t_out_addr: 0xed82c00, len:4,pad_offset:0.0
+MS. FInal t_out_addr: 0xed82c00, pad_offset:0
+OBUF.pop                  ->   R0
+R0         >>  #(15)      ->   R0
+R0                        -> ST-DDR.push
+Number of instructions: 1511
+[   75497472 -1879048192 -1844752384 -1827963904 -1861515264 -1876951040
+ -1843396607 -1826619391 -1860173823  1913651225  1611661568  1628440576
+  1630537728  1645215744  1661992960  1913651225  1343225857  1611702784
+  1360003085  1628438528  1362100237  1630535680  1645215744  1661992960
+   270598145  1881210897  1610678288  1881210897  1610684960   291635201
+   560070657  1883373569  1627521088  1629618240  1883373583  1627521152
+  1629618304  1883373583  1627574272  1629671424   304283649  1885536258
+  1644363904  1885536258  1644364160  1885536257  1644364928   323223553
+  1887698945  1661206560  1879048194  1614807041  1631584256  1633681408
+  1648361473  1665138688  1879048194  1614807058  1631584256  1633681408
+  1648361475  1665138688  1879048207  1614807041  1631584258  1633681410
+  1648361472  1665138688  1879048207  1614807058  1631584288  1633681440
+  1648361472  1665138688  1879048193  1614807040  1631584257  1633681409
+  1648361481  1665138689 -1610612640 -1879048192 -1861255584 -1860173799
+ -1843905536 -1843396594 -1827125248 -1826619378  1879048193  1610612738
+  1879048193  1610612768  1879048199  1610612740  1879048199  1610612800
+  1879048193  1610612737  1879048192  1610613248   312475648   329252864
+  1889861657  1704984832  1723858944  1742733312  1889861657  1436549120
+  1705038336  1723858944  1742733312  1881210887  1629487106  1881210887
+  1629487524  1881210881  1629487105  1881210880  1361051649  1629509768
+  1883373575  1648361472  1883373575  1648361472  1883373569  1648361473
+  1883373568  1648361472  1885536263  1667235840  1885536263  1667235840
+  1885536257  1667235841  1885536256  1667235840 -1342177152  -822081024
+ -1342177135 -1342177118 -1308622592  -822083584 -1291845120  -822080256
+  -887514877  -822079437 -1258290432 -1342177149  -822080973 -1308622541
+  -822083533 -1291845069  -822080205  -887514828  -822079420 -1258290125
+ -1258291152 -1342177149  -822080973 -1308622541  -822083533 -1291845069
+  -822080205  -887514828  -822079420 -1258290125 -1258291152 -1342177149
+  -822080973 -1308622541  -822083533 -1291845069  -822080205  -887514828
+  -822079420 -1258290125 -1258291144 -2147483521 -2147483648    75497472
+ -1878039552 -1845128192 -1828312064 -1861863424 -1876951015 -1843396582
+ -1826619366 -1860173798  1913651201  1611661328  1628438528  1630535680
+  1645215872  1661992960  1913651212  1611661824  1628442624  1630539776
+  1645215744  1661992960  1913651212  1343225857  1611703296  1360003085
+  1628438528  1362100237  1630535680  1645215744  1661992960  1913651201
+  1611661312  1628438656  1630535808  1645220352  1661993024   270598145
+  1881210897  1610678304  1881210897  1610684992   291635201   560070657
+  1883373569  1627521088  1629618240  1883373583  1627521280  1629618432
+  1883373583  1627574272  1629671424   304283649  1885536258  1644364032
+  1885536258  1644364544  1885536257  1644366080   323223553  1887698945
+  1661206560  1879048194  1614807041  1631584256  1633681408  1648361473
+  1665138688  1879048194  1614807058  1631584256  1633681408  1648361475
+  1665138688  1879048207  1614807041  1631584258  1633681410  1648361472
+  1665138688  1879048207  1614807058  1631584288  1633681440  1648361472
+  1665138688  1879048193  1614807040  1631584257  1633681409  1648361481
+  1665138689 -1610612636 -1879048192 -1861355840 -1860173786 -1843417088
+ -1843396576 -1826636800 -1826619360  1879048193  1610612738  1879048193
+  1610612768  1879048199  1610612740  1879048199  1610612800  1879048193
+  1610612737  1879048192  1610613248   312475648   329252864  1889861644
+  1704985088  1723858944  1742733312  1889861644  1436549120  1705038848
+  1723858944  1742733312  1889861633  1704984608  1723858976  1742733344
+  1881210887  1629487108  1881210887  1629487528  1881210881  1629487105
+  1881210880  1361051648  1629532048  1883373575  1648361472  1883373575
+  1648361472  1883373569  1648361473  1883373568  1648361472  1885536263
+  1667235840  1885536263  1667235840  1885536257  1667235841  1885536256
+  1667235840 -1342177152  -822080000 -1342177135 -1342177118 -1308622592
+  -822083584 -1291845120  -822080000  -887514877  -822079437 -1258290432
+ -1342177149  -822079949 -1308622541  -822083533 -1291845069  -822079949
+  -887514828  -822079420 -1258290125 -1258291152 -1342177149  -822079949
+ -1308622541  -822083533 -1291845069  -822079949  -887514828  -822079420
+ -1258290125 -1258291152 -1342177149  -822079949 -1308622541  -822083533
+ -1291845069  -822079949  -887514828  -822079420 -1258290125 -1258291144
+ -2147483521 -2147483648    75497472 -1878139904 -1843822592 -1826895872
+ -1860447232 -1876951002 -1843396570 -1826619354 -1860173786  1913651203
+  1611661328  1628438528  1630535680  1645215872  1661992960  1913651212
+  1611661824  1628442624  1630539776  1645215744  1661992960  1913651212
+  1611715584  1360003078  1628471296  1362100230  1630568448  1645215744
+  1661992960   270598145  1881210889  1610678336  1881210889  1610685056
+   291635201   560070657  1883373575  1627521088  1629618240  1883373575
+  1627521536  1629618688  1883373575  1627574272  1629671424   304283649
+  1885536258  1644364288  1885536258  1644365312  1885536263  1644368384
+   323223553  1887698951  1661206560  1879048194  1614807041  1631584256
+  1633681408  1648361473  1665138688  1879048194  1614807050  1631584256
+  1633681408  1648361475  1665138688  1879048199  1614807041  1631584264
+  1633681416  1648361472  1665138688  1879048199  1614807050  1631584320
+  1633681472  1648361472  1665138688  1879048199  1614807040  1631584257
+  1633681409  1648361481  1665138689 -1610612642 -1879048192 -1861907584
+ -1860173779 -1844725760 -1843396566 -1827945472 -1826619350  1879048193
+  1610612744  1879048193  1610612800  1879048195  1610612752  1879048195
+  1610612864  1879048199  1610612737  1879048192  1610613248   312475648
+   329252864  1889861644  1704985088  1723858944  1742733312  1889861644
+  1705012224  1723858944  1742733312  1881210883  1629487112  1881210883
+  1629487536  1881210887  1629487105  1881210880  1629510432  1883373571
+  1648361472  1883373571  1648361472  1883373575  1648361473  1883373568
+  1648361472  1885536259  1667235840  1885536259  1667235840  1885536263
+  1667235841  1885536256  1667235840 -1342177152  -822080512 -1342177135
+ -1342177118 -1308622592  -822083584 -1291845120  -822080000  -887514877
+  -822079437 -1258290432 -1342177149  -822080461 -1308622541  -822083533
+ -1291845069  -822079949  -887514828  -822079420 -1258290125 -1258291152
+ -1342177149  -822080461 -1308622541  -822083533 -1291845069  -822079949
+  -887514828  -822079420 -1258290125 -1258291152 -1342177149  -822080461
+ -1308622541  -822083533 -1291845069  -822079949  -887514828  -822079420
+ -1258290125 -1258291144 -2147483521 -2147483648    75497472 -1878691840
+ -1844718592 -1827349504 -1860900864 -1876950995 -1843396563 -1826619347
+ -1860173779  1913651212  1611661824  1628442624  1630539776  1645215744
+  1661992960  1913651212  1611688960  1360003075  1628454912  1362100227
+  1630552064  1645215744  1661992960  1913651215  1611661312  1628438592
+  1630535744  1645224960  1661992992   270598145  1881210887  1610678288
+  1881210885  1610678400  1881210885  1610685184   291635201   560070657
+  1883373571  1627522048  1629619200  1883373571  1627574272  1629671424
+   304283649  1885536263  1644363904  1885536258  1644364800  1885536258
+  1644366848   323223553  1887698944  1661206528  1879048199  1614807041
+  1631584256  1633681408  1648361473  1665138688  1879048194  1614807048
+  1631584256  1633681408  1648361480  1665138688  1879048194  1614807088
+  1631584256  1633681408  1648361496  1665138688  1879048195  1614807048
+  1631584257  1633681409  1648361472  1665138688  1879048195  1614807088
+  1631584260  1633681412  1648361472  1665138688 -1610612638 -1879048192
+ -1860193024 -1860173776 -1844441088 -1843396561 -1827660800 -1826619345
+  1879048193  1610612737  1879048193  1610612740  1879048193  1610612738
+  1879048193  1610612744  1879048192  1610612737  1879048192  1610612752
+   312475648   329252864  1889861644  1704985088  1723858944  1742733312
+  1889861644  1704998912  1723858944  1742733312  1889861647  1704984592
+  1723858960  1742733328  1881210881  1629487120  1881210881  1629487552
+  1881210880  1629487105  1881210880  1629499648  1883373569  1648361472
+  1883373569  1648361472  1883373568  1648361473  1883373568  1648361472
+  1885536257  1667235840  1885536257  1667235840  1885536256  1667235841
+  1885536256  1667235840 -1342177152  -822080256 -1342177135 -1342177118
+ -1308622592  -822083584 -1291845120  -822080256  -887514877  -822079437
+ -1258290432 -1342177149  -822080205 -1308622541  -822083533 -1291845069
+  -822080205  -887514828  -822079420 -1258290125 -1258291152 -1342177149
+  -822080205 -1308622541  -822083533 -1291845069  -822080205  -887514828
+  -822079420 -1258290125 -1258291152 -1342177149  -822080205 -1308622541
+  -822083533 -1291845069  -822080205  -887514828  -822079420 -1258290125
+ -1258291144 -2147483645 -2147483648    75497472 -1876977664 -1845271552
+ -1828230144 -1861781504 -1876950992 -1843396559 -1826619342 -1860173774
+  1913651212  1611661824  1628442624  1630539776  1645215744  1661992960
+  1913651212  1611675648  1360003073  1628479488  1362100225  1630576640
+  1645215744  1661992960  1913651201  1611661440  1628438528  1630535680
+  1645216768  1661992960  1913651231  1611661312  1628438592  1630535744
+  1645234176  1661992992   270598145  1881210887  1610678288  1881210883
+  1610678528  1881210883  1610685440   291635201   560070657  1883373569
+  1627523072  1629620224  1883373569  1627574272  1629671424   304283649
+  1885536263  1644363904  1885536258  1644365824  1885536258  1644369920
+   323223553  1887698944  1661206528  1879048199  1614807041  1631584256
+  1633681408  1648361473  1665138688  1879048194  1614807048  1631584256
+  1633681408  1648361480  1665138688  1879048194  1614807072  1631584256
+  1633681408  1648361496  1665138688  1879048193  1614807048  1631584257
+  1633681409  1648361472  1665138688  1879048193  1614807072  1631584258
+  1633681410  1648361472  1665138688 -1610612638 -1879048192 -1862071296
+ -1860173772 -1844943872 -1843396557 -1828163584 -1826619341  1879048193
+  1610612737  1879048193  1610612738  1879048192  1610612738  1879048192
+  1610612740  1879048192  1610612737  1879048192  1610612740   312475648
+   329252864  1889861644  1704985088  1723858944  1742733312  1889861644
+  1704992256  1723858944  1742733312  1889861663  1704984592  1723858960
+  1742733328  1881210880  1629487136  1881210880  1629487584  1881210880
+  1629487105  1881210880  1629494304  1883373568  1648361472  1883373568
+  1648361472  1883373568  1648361473  1883373568  1648361472  1885536256
+  1667235840  1885536256  1667235840  1885536256  1667235841  1885536256
+  1667235840 -1342177152  -822080256 -1342177135 -1342177118 -1308622592
+  -822083584 -1291845120  -822080000  -887514877  -822079437 -1258290432
+ -1342177149  -822080205 -1308622541  -822083533 -1291845069  -822079949
+  -887514828  -822079420 -1258290125 -1258291152 -1342177149  -822080205
+ -1308622541  -822083533 -1291845069  -822079949  -887514828  -822079420
+ -1258290125 -1258291152 -1342177149  -822080205 -1308622541  -822083533
+ -1291845069  -822079949  -887514828  -822079420 -1258290125 -1258291144
+ -2147483648 -2147483648    75497472 -1878856704 -1845134336 -1827306496
+ -1860856832 -1876950988 -1843396556 -1826619336 -1860173768  1913651215
+  1611661344  1628438528  1630535680  1645216000  1661992960  1913651231
+  1611661312  1628438656  1630535808  1376780289  1645223936  1661993024
+   270598145  1881210881  1610678288  1881210895  1610678784  1881210895
+  1610685952   291635201   560070657  1883373569  1627521088  1629618240
+  1883373581  1627525120  1629622272  1883373581  1627578368  1629675520
+   304283649  1885536257  1644363904  1885536258  1644367872  1885536258
+  1644376064  1885536257  1644400640   323223553  1887698945  1661206560
+  1879048193  1614807041  1631584256  1633681408  1648361473  1665138688
+  1879048194  1614807042  1631584256  1633681408  1648361474  1665138688
+  1879048194  1614807072  1631584256  1633681408  1648361478  1665138688
+  1879048204  1614807042  1631584258  1633681410  1648361472  1665138688
+  1879048204  1614807072  1631584284  1633681436  1648361472  1665138688
+  1879048193  1614807040  1631584257  1633681409  1648361490  1665138689
+ -1610612646 -1879048192 -1860423680 -1860173767 -1844726784 -1843396551
+ -1827946496 -1826619335  1879048193  1610612738  1879048193  1610612764
+  1879048204  1610612738  1879048204  1610612764  1879048193  1610612737
+  1879048192  1610613128   312475648   329252864  1889861663  1704984608
+  1723858976  1742733344  1881210892  1629487168  1881210892  1629488064
+  1881210881  1629487105  1881210880  1629501504  1883373580  1648361472
+  1883373580  1648361472  1883373569  1648361473  1883373568  1648361472
+  1885536268  1667235840  1885536268  1667235840  1885536257  1667235841
+  1885536256  1667235840 -1342177152  -822080512 -1342177135 -1342177118
+ -1308622592  -822083584 -1291845120  -822080000  -887514877  -822079437
+ -1258290432 -1342177149  -822080461 -1308622541  -822083533 -1291845069
+  -822079949  -887514828  -822079420 -1258290125 -1258291152 -1342177149
+  -822080461 -1308622541  -822083533 -1291845069  -822079949  -887514828
+  -822079420 -1258290125 -1258291152 -1342177149  -822080461 -1308622541
+  -822083533 -1291845069  -822079949  -887514828  -822079420 -1258290125
+ -1258291144 -2147483311 -2147483648    75497472 -1877217280 -1845426176
+ -1828646912 -1862195200 -1876950983 -1843396550 -1826619316 -1860173748
+  1913651231  1611661344  1628438528  1630535680  1645216000  1661992960
+  1913651263  1611661312  1628438656  1630535808  1376780290  1645232128
+  1661993024   270598145  1881210881  1610678288  1881210894  1610679296
+  1881210894  1610693632   291635201   560070657  1883373569  1627521088
+  1629618240  1883373580  1627529216  1629626368  1883373580  1359085569
+  1627561984  1361182721  1629659136   304283649  1885536257  1644363904
+  1885536258  1644371968  1885536258  1644388352  1885536257  1375928321
+  1644371968   323223553  1887698945  1661206560  1879048193  1614807041
+  1631584256  1633681408  1648361473  1665138688  1879048194  1614807042
+  1631584256  1633681408  1648361474  1665138688  1879048194  1614807070
+  1631584256  1633681408  1648361478  1665138688  1879048204  1614807042
+  1631584258  1633681410  1648361472  1665138688  1879048204  1614807070
+  1631584282  1633681434  1648361472  1665138688  1879048193  1614807040
+  1631584257  1633681409  1648361490  1665138689 -1610612675 -1879048192
+ -1862142976 -1860173746 -1844889600 -1843396531 -1828108288 -1826619315
+  1879048192  1610612738  1879048192  1610612762  1879048204  1610612738
+  1879048204  1610612762  1879048193  1610612737  1879048192  1610613074
+   312475648   329252864  1889861695  1704984608  1723858976  1742733344
+  1881210892  1629487232  1881210892  1629489024  1881210881  1629487105
+  1881210880  1629515904  1883373580  1648361472  1883373580  1648361472
+  1883373569  1648361473  1883373568  1648361472  1885536268  1667235840
+  1885536268  1667235840  1885536257  1667235841  1885536256  1667235840
+ -1342177152  -822080256 -1342177135 -1342177118 -1308622592  -822083584
+ -1291845120  -822080000  -887514877  -822079437 -1258290432 -1342177272
+ -2147483311 -2147483648    75497472 -1878952960 -1844732928 -1827953664
+ -1861501952 -1876950962 -1843396530 -1826619278 -1860173710  1913651263
+  1611661344  1628438528  1630535680  1645216000  1661992960  1913651263
+  1611661312  1628438656  1630535808  1376780292  1645248512  1661993024
+   270598145  1881210881  1610678288  1881210894  1610680320  1881210894
+  1610708992   291635201   560070657  1883373569  1627521088  1629618240
+  1883373580  1627529216  1629626368  1883373580  1359085569  1627561984
+  1361182721  1629659136   304283649  1885536257  1644363904  1885536258
+  1644380160  1885536258  1644412928  1885536257  1375928322  1644380160
+   323223553  1887698945  1661206560  1879048193  1614807041  1631584256
+  1633681408  1648361473  1665138688  1879048194  1614807042  1631584256
+  1633681408  1648361474  1665138688  1879048194  1614807070  1631584256
+  1633681408  1648361478  1665138688  1879048204  1614807042  1631584258
+  1633681410  1648361472  1665138688  1879048204  1614807070  1631584282
+  1633681434  1648361472  1665138688  1879048193  1614807040  1631584257
+  1633681409  1648361490  1665138689 -1610612675 -1879048192 -1861482496
+ -1860173708 -1844196352 -1843396493 -1827415040 -1826619277  1879048192
+  1610612738  1879048192  1610612762  1879048204  1610612738  1879048204
+  1610612762  1879048193  1610612737  1879048192  1610613074   312475648
+   329252864  1889861695  1704984608  1723858976  1742733344  1881210892
+  1629487232  1881210892  1629488768  1881210881  1629487105  1881210880
+  1629508736  1883373580  1648361472  1883373580  1648361472  1883373569
+  1648361473  1883373568  1648361472  1885536268  1667235840  1885536268
+  1667235840  1885536257  1667235841  1885536256  1667235840 -1342177152
+  -822080512 -1342177135 -1342177118 -1308622592  -822083584 -1291845120
+  -822080256  -887514877  -822079437 -1258290432 -1342177272 -2147483311
+ -2147483648    75497472 -1878259712 -1844178944 -1827399680 -1860951040
+ -1876950924 -1843396492 -1826619274 -1860173706  1913651212  1611663360
+  1628439552  1630536704  1645215744  1661992960  1913651212  1611687936
+  1628451840  1630548992  1645215744  1661992960  1913651215  1611661312
+  1628438592  1630535744  1645232128  1661992992   270598145  1881211007
+  1610678288   291635201   560070657  1883373568  1627521024  1629618176
+   304283649  1885536383  1644363904   323223553  1887698944  1661206528
+  1879048319  1614807041  1631584256  1633681408  1648361473  1665138688
+ -1610612698 -1879048192 -1860686848 -1860173706  1879048192  1610612737
+  1879048192  1610612737  1879048192  1610612737  1879048192  1610612737
+  1879048192  1610612737  1879048192  1610612737  1889861644  1704984832
+  1723858944  1742733312  1889861644  1704987904  1723858944  1742733312
+  1889861647  1704984592  1723858944  1742733312  1881210880  1629487120
+  1881210880  1629487312  1881210880  1629487105  1881210880  1629489808
+ -1342177152  -822079744 -1342177272 -2147483648 -2147483647]

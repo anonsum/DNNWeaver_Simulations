@@ -1,0 +1,17 @@
+**************************************************
+Caffemodel Weights File : ../../caffemodelzoo/lenet/snapshot_20ch_50ch_500ch_10ch_lenet_iter_10000.caffemodel
+Prototxt File	   : ../../prototxt/lenet/lenet.prototxt
+CNN model name	   : lenet
+**************************************************
+
+Layer Name: conv1 , Shape: (20, 1, 5, 5)
+Generated weights in systolic array format in weightdata/lenet_20_50_500_10/conv1.float weightdata/lenet_20_50_500_10/conv1.hex
+
+Layer Name: conv2 , Shape: (50, 20, 5, 5)
+Generated weights in systolic array format in weightdata/lenet_20_50_500_10/conv2.float weightdata/lenet_20_50_500_10/conv2.hex
+
+Layer Name: fc1 , Shape: (500, 1250)
+Generated weights in systolic array format in weightdata/lenet_20_50_500_10/fc1.flt weightdata/lenet_20_50_500_10/fc1.hex
+
+Layer Name: fc2 , Shape: (10, 500)
+Generated weights in systolic array format in weightdata/lenet_20_50_500_10/fc2.flt weightdata/lenet_20_50_500_10/fc2.hex

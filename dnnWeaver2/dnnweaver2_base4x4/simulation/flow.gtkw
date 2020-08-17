@@ -1,0 +1,83 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Wed Jul 17 04:46:53 2019
+[*]
+[dumpfile] "/local/workspace/ee210056/dnnweaver_v2/dnnweaver2_expt/tb_dnnw2_ctrl.vcd"
+[dumpfile_mtime] "Wed Jul 17 04:46:25 2019"
+[dumpfile_size] 87062962
+[savefile] "/local/workspace/ee210056/dnnweaver_v2/dnnweaver2_expt/flow.gtkw"
+[timestart] 0
+[size] 1024 667
+[pos] -1 -1
+*-25.074677 61538000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_dnnw2_ctrl.
+[treeopen] tb_dnnw2_ctrl.UUT.
+[sst_width] 218
+[signals_width] 254
+[sst_expanded] 1
+[sst_vpaned_height] 166
+@28
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_buf_req_loop_id[1:0]
+@22
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_buf_req_size[15:0]
+@28
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_buf_req_type
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_buf_req_v
+@22
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_loop_iter[15:0]
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_loop_iter_loop_id[4:0]
+@28
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_loop_iter_v
+@22
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_loop_stride[31:0]
+@28
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_loop_stride_id[1:0]
+@22
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_loop_stride_loop_id[4:0]
+@28
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_loop_stride_type[1:0]
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_loop_stride_v
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_mem_req_id[1:0]
+@22
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_mem_req_loop_id[4:0]
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_mem_req_size[15:0]
+@28
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_mem_req_type[1:0]
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_mem_req_v
+@22
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_pu_inst[31:0]
+@28
+tb_dnnw2_ctrl.UUT.u_ctrl.cfg_pu_inst_v
+tb_dnnw2_ctrl.UUT.u_ctrl.block_done
+tb_dnnw2_ctrl.UUT.u_ctrl.last_block
+@22
+tb_dnnw2_ctrl.UUT.u_ctrl.num_blocks[11:0]
+@28
+tb_dnnw2_ctrl.UUT.u_ctrl.pu_block_start
+tb_dnnw2_ctrl.UUT.u_ctrl.base_loop_ctrl_done
+tb_dnnw2_ctrl.UUT.u_ctrl.base_loop_ctrl_start
+@22
+tb_dnnw2_ctrl.UUT.cl_ddr0_araddr[41:0]
+@28
+tb_dnnw2_ctrl.UUT.cl_ddr0_arready
+tb_dnnw2_ctrl.UUT.cl_ddr0_arvalid
+@22
+tb_dnnw2_ctrl.UUT.cl_ddr1_araddr[41:0]
+@28
+tb_dnnw2_ctrl.UUT.cl_ddr1_arready
+tb_dnnw2_ctrl.UUT.cl_ddr1_arvalid
+tb_dnnw2_ctrl.UUT.compute_req
+@22
+tb_dnnw2_ctrl.UUT.sys_array.accumulator_out[511:0]
+@28
+tb_dnnw2_ctrl.UUT.sys_array._sys_obuf_write_req
+@22
+tb_dnnw2_ctrl.UUT.sys_array.sys_obuf_write_addr[10:0]
+@28
+tb_dnnw2_ctrl.UUT.sys_array.sys_obuf_write_req
+tb_dnnw2_ctrl.UUT.compute_done
+tb_dnnw2_ctrl.UUT.pu_compute_start
+@29
+tb_dnnw2_ctrl.UUT.pu_compute_done
+[pattern_trace] 1
+[pattern_trace] 0

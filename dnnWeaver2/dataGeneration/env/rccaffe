@@ -1,0 +1,2 @@
+export PATH=/local/workspace/tools/anaconda2/bin:$PATH
+export PYTHONPATH=/local/workspace/tools/caffe/python:$PYTHONPATH
